@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Scope & Facilities — Prof. Sung-Ju Park</title>
+  <meta name="description" content="Detailed research scopes, experimental facilities, and methodology in Structural Mechanics, Underwater Acoustics, Stealth, AI Optimization, and Digital Twin.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚓</text></svg>">
+</head>
+<body data-page="research">
+
+  <!-- Site Header & Nav -->
+  <header class="site-head">
+    <div class="site-head-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-badge">CPSS Lab</span>
+        <span>Sung-Ju Park</span>
+        <span class="brand-sub">| 동명대학교</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <nav class="site-nav" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="people.html">People</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section style="background: var(--bg-soft); padding: 3rem 0; border-bottom: 1px solid var(--rule);">
+    <div class="wrap">
+      <span class="section-label">Research Areas & Methodology</span>
+      <h1>Research Pillars & Experimental Facilities</h1>
+      <p style="color: var(--ink-soft); max-width: var(--measure); margin-bottom: 0;">
+        Our laboratory advances computational and experimental methods in structural integrity under extreme environments, underwater acoustic radiation and stealth engineering, AI-driven structural optimization, and digital twin virtual-real synchronization.
+      </p>
+    </div>
+  </section>
+
+  <!-- Pillar 1: Structural Mechanics -->
+  <section class="section" id="structures">
+    <div class="wrap">
+      <div class="grid-2" style="align-items: center; gap: 3rem;">
+        <div>
+          <span class="section-label">Pillar 1</span>
+          <h2>Structural Mechanics, Fracture & Material DB</h2>
+          <p>
+            Accidental impacts such as ship collisions, groundings, and subsea pipeline failures require precise damage prediction. We develop 3D ductile fracture surfaces (Hosford-Coulomb and HC-DSSE formulations) calibrated for shell and solid elements in FE simulations.
+          </p>
+          <ul style="padding-left: 1.25rem; color: var(--ink-soft); margin-bottom: 1.5rem;">
+            <li><strong>Extreme Environment Material DB:</strong> Cryogenic testing (-197°C), high strain rate tensile behavior for marine steels (A, AH36, DH36, EH36, SUS304L, API 5L).</li>
+            <li><strong>Hydrogen Embrittlement:</strong> Ductile fracture behavior of hydrogen-charged API pipeline steel for subsea transport safety.</li>
+            <li><strong>Low Cycle Fatigue & Damage Evolution:</strong> Linear and non-linear damage accumulation models applied to structural health assessment.</li>
+          </ul>
+        </div>
+        <div>
+          <img src="images/research/testing-equipment.jpg" alt="Structural Mechanics & Extreme Testing Rigs" style="border-radius: var(--radius); border: 1px solid var(--rule); box-shadow: var(--shadow);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pillar 2: Underwater Acoustics -->
+  <section class="section section-tint" id="acoustics">
+    <div class="wrap">
+      <div class="grid-2" style="align-items: center; gap: 3rem;">
+        <div>
+          <img src="images/research/underwater-radiated-noise.jpg" alt="Underwater Radiated Noise and Acoustic TS" style="border-radius: var(--radius); border: 1px solid var(--rule); box-shadow: var(--shadow);">
+        </div>
+        <div>
+          <span class="section-label">Pillar 2</span>
+          <h2>Underwater Radiated Noise (URN) & Target Strength (TS)</h2>
+          <p>
+            Minimizing structure-borne acoustic signatures is vital for naval stealth and marine environmental protection. We perform multiphysics acoustic-structure interaction simulations and experimental tank validations.
+          </p>
+          <ul style="padding-left: 1.25rem; color: var(--ink-soft); margin-bottom: 1.5rem;">
+            <li><strong>Bubble Layer Noise Reduction:</strong> Numerical analysis of acoustic insertion loss and radiation efficiency in wetted plates with air bubble caps.</li>
+            <li><strong>Target Strength (TS) Analysis:</strong> Small-water-tank cumulative energy method and OptiX shooting-and-bouncing rays (SBR) for submarine bistatic TS prediction.</li>
+            <li><strong>Resilient Mount Dynamics:</strong> Dynamic behavior and hyperelastic constitutive modeling under static preload.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pillar 3: RCS & Stealth -->
+  <section class="section" id="stealth">
+    <div class="wrap">
+      <div class="grid-2" style="align-items: center; gap: 3rem;">
+        <div>
+          <span class="section-label">Pillar 3</span>
+          <h2>Radar Cross Section (RCS) & Naval Survivability</h2>
+          <p>
+            Radar stealth and missile threat vulnerability assessment determine combatant survivability. We design electromagnetic scattering models and impact algorithms for modern naval surface ships.
+          </p>
+          <ul style="padding-left: 1.25rem; color: var(--ink-soft); margin-bottom: 1.5rem;">
+            <li><strong>Hit Location Estimation Algorithms:</strong> Hit distribution estimation software for radar-homing anti-ship missiles considering EM scatter distribution.</li>
+            <li><strong>Radar Reflectors:</strong> Performance assessment and panel-type reflector design for small leisure and naval vessels.</li>
+            <li><strong>Concept Stage RCS Estimation:</strong> DB-based software modules for early naval design stages (K576 Smart Battleship, Corvette, Submarine).</li>
+          </ul>
+        </div>
+        <div>
+          <img src="images/research/rcs-simulation.jpg" alt="RCS Simulation & Missile Hit Location Algorithm" style="border-radius: var(--radius); border: 1px solid var(--rule); box-shadow: var(--shadow);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pillar 4: AI Structural Engineering -->
+  <section class="section section-tint" id="ai">
+    <div class="wrap">
+      <div class="grid-2" style="align-items: center; gap: 3rem;">
+        <div>
+          <img src="images/research/ai-pinn-submarine.jpg" alt="AI PINN Submarine Optimization" style="border-radius: var(--radius); border: 1px solid var(--rule); box-shadow: var(--shadow);">
+        </div>
+        <div>
+          <span class="section-label">Pillar 4</span>
+          <h2>Physics-Informed AI & Structural Optimization</h2>
+          <p>
+            High-fidelity FE simulations can be computationally heavy. We integrate machine learning with physics laws (PINN/DNN) to build ultra-fast surrogate models for structural design optimization.
+          </p>
+          <ul style="padding-left: 1.25rem; color: var(--ink-soft); margin-bottom: 1.5rem;">
+            <li><strong>PINN Frameworks:</strong> Physics-Informed Neural Networks integrating design codes for stiffened cylinder design under hydrostatic pressure.</li>
+            <li><strong>Collapse Strength Prediction:</strong> Deep neural network models for rapid prediction of ultimate strength in submarine torispherical domes and hulls.</li>
+            <li><strong>Structural Health AI:</strong> Real-time SHM for e-methanol floating offshore platforms and high-temperature plant pipelines.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pillar 5: Digital Twin -->
+  <section class="section" id="digital-twin">
+    <div class="wrap">
+      <div class="grid-2" style="align-items: center; gap: 3rem;">
+        <div>
+          <span class="section-label">Pillar 5</span>
+          <h2>Digital Twin & Autonomous Unmanned Mobility</h2>
+          <p>
+            Creating real-time virtual representations of physical assets enables remote control, telemetry monitoring, and predictive maintenance for defense and commercial platforms.
+          </p>
+          <ul style="padding-left: 1.25rem; color: var(--ink-soft); margin-bottom: 1.5rem;">
+            <li><strong>Unity-ROS2 Virtual Framework:</strong> Digital twin system for remote-controlled unmanned surface vessels (USV) with obstacle avoidance.</li>
+            <li><strong>Virtual Remote Control:</strong> Remote control requirements and telemetry monitoring for naval unmanned systems.</li>
+            <li><strong>AIoT Leak Monitoring:</strong> IoT sensor data processing and machine learning for buried pipeline environmental corrosion monitoring.</li>
+          </ul>
+        </div>
+        <div>
+          <img src="images/research/high-speed-tensile.jpg" alt="Digital Twin & High-Speed Testing Rigs" style="border-radius: var(--radius); border: 1px solid var(--rule); box-shadow: var(--shadow);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facilities Section -->
+  <section class="section section-tint" id="facilities">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-label">Experimental Rigs</span>
+        <h2>Key Laboratory Testing Rigs & Facilities</h2>
+      </div>
+
+      <div class="grid-3">
+        <div class="card" style="padding: 1.5rem;">
+          <h3 style="color: var(--accent);">1. Universal Testing Machine (UTM)</h3>
+          <p style="font-size: 0.9375rem; color: var(--ink-soft);">
+            Capacity: &plusmn;50 ton hydraulic servo PC control.<br>
+            <strong>Temperature Chamber:</strong> -197 &deg;C to +300 &deg;C for liquid nitrogen cryogenic testing.
+          </p>
+        </div>
+
+        <div class="card" style="padding: 1.5rem;">
+          <h3 style="color: var(--accent);">2. High-Speed Tensile Tester</h3>
+          <p style="font-size: 0.9375rem; color: var(--ink-soft);">
+            Max stroke speed: 15 m/s, Load: 5 ton.<br>
+            <strong>High-Speed Camera:</strong> 190K Hz sampling rate for dynamic strain DIC tracking.
+          </p>
+        </div>
+
+        <div class="card" style="padding: 1.5rem;">
+          <h3 style="color: var(--accent);">3. Pendulum Impact Tester</h3>
+          <p style="font-size: 0.9375rem; color: var(--ink-soft);">
+            High-speed compression loading.<br>
+            Max testing speed: 10 m/s, Max strain rate: 200 /s, Max load: 20 ton.
+          </p>
+        </div>
+
+        <div class="card" style="padding: 1.5rem;">
+          <h3 style="color: var(--accent);">4. Bending-Torsion Test Rig</h3>
+          <p style="font-size: 0.9375rem; color: var(--ink-soft);">
+            Longitudinal bending and torsional fatigue loading setup.<br>
+            Max testing load: 1 ton.
+          </p>
+        </div>
+
+        <div class="card" style="padding: 1.5rem;">
+          <h3 style="color: var(--accent);">5. Reverberant Water Tank Rigs</h3>
+          <p style="font-size: 0.9375rem; color: var(--ink-soft);">
+            Small-scale reverberant water tank for cumulative energy method acoustic TS and URN transfer function measurement.
+          </p>
+        </div>
+
+        <div class="card" style="padding: 1.5rem;">
+          <h3 style="color: var(--accent);">6. CAE & Digital Twin Workstations</h3>
+          <p style="font-size: 0.9375rem; color: var(--ink-soft);">
+            Abaqus VUMAT user subroutines, COMSOL Multiphysics, ANSYS, Unity-ROS2 simulation servers, Python PyTorch GPU workstations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-inner">
+        <div class="foot-brand">
+          <h3>Cyber-Physical Structural Systems Laboratory (CPSS Lab)</h3>
+          <p>School of Electrical & Control Engineering / Department of Naval Architecture & Ocean Engineering<br>Tongmyong University, Busan, Republic of Korea</p>
+        </div>
+        <div class="foot-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research Scope</a></li>
+            <li><a href="projects.html">Research Projects</a></li>
+            <li><a href="publications.html">Publications & Patents</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="foot-links">
+          <h4>Contact Info</h4>
+          <p style="margin-bottom: 0.5rem;"><strong>Email:</strong><br><a href="mailto:parksj0314@tu.ac.kr">parksj0314@tu.ac.kr</a></p>
+          <p><strong>Phone:</strong> +82-10-7556-1099</p>
+        </div>
+      </div>
+      <div class="foot-copy">
+        &copy; 2026 Prof. Sung-Ju Park. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

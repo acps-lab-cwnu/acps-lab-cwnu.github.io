@@ -1,0 +1,9 @@
+# Ignore large binary reference files and zip archives for clean GitHub Pages upload
+*.docx
+*.pptx
+*.zip
+*.log
+_reference/
+soonseok-song.github.io-main/
+참고자료/
+.claude/

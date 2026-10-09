@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Projects & Grants — Prof. Sung-Ju Park</title>
+  <meta name="description" content="Complete listing of national, defense, and industrial research projects led or participated in by Prof. Sung-Ju Park.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚓</text></svg>">
+</head>
+<body data-page="projects">
+
+  <!-- Site Header & Nav -->
+  <header class="site-head">
+    <div class="site-head-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-badge">CPSS Lab</span>
+        <span>Sung-Ju Park</span>
+        <span class="brand-sub">| 동명대학교</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <nav class="site-nav" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="people.html">People</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section style="background: var(--bg-soft); padding: 3rem 0; border-bottom: 1px solid var(--rule);">
+    <div class="wrap">
+      <span class="section-label">Grants & Industry Contracts</span>
+      <h1>Research Projects &amp; Grants (<span data-count="projects"></span>)</h1>
+      <p style="color: var(--ink-soft); max-width: var(--measure); margin-bottom: 0;">
+        Funded by Defense Acquisition Program Administration (DAPA), Republic of Korea Navy, Hanwha Ocean, HD Hyundai Heavy Industries, KRISO, NRF, KIMST, NIFS, and local government bodies.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects List with Filters -->
+  <section class="section">
+    <div class="wrap">
+      
+      <!-- Filter Bar (Ongoing vs Completed only) -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Projects (<span data-count="projects"></span>)</button>
+        <button class="filter-btn" data-filter="ongoing">Ongoing (<span data-count="ongoing"></span>)</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+
+        <div class="search-box">
+          <input type="text" class="search-input" placeholder="Search projects by title, sponsor, PI...">
+        </div>
+      </div>
+
+      <!-- Project Cards -->
+      <div class="project-list" id="project-list"></div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-inner">
+        <div class="foot-brand">
+          <h3>Cyber-Physical Structural Systems Laboratory (CPSS Lab)</h3>
+          <p>School of Electrical & Control Engineering / Department of Naval Architecture & Ocean Engineering<br>Tongmyong University, Busan, Republic of Korea</p>
+        </div>
+        <div class="foot-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research Scope</a></li>
+            <li><a href="projects.html">Research Projects</a></li>
+            <li><a href="publications.html">Publications & Patents</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="foot-links">
+          <h4>Contact Info</h4>
+          <p style="margin-bottom: 0.5rem;"><strong>Email:</strong><br><a href="mailto:parksj0314@tu.ac.kr">parksj0314@tu.ac.kr</a></p>
+          <p><strong>Phone:</strong> +82-10-7556-1099</p>
+        </div>
+      </div>
+      <div class="foot-copy">
+        &copy; 2026 Prof. Sung-Ju Park. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="data/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
