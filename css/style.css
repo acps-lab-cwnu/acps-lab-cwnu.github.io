@@ -933,3 +933,23 @@ p { margin-top: 0; margin-bottom: 1rem; }
 .news-list li { padding: 0.65rem 0; border-bottom: 1px solid var(--rule); color: var(--ink-soft); line-height: 1.6; }
 .news-date { display: inline-block; min-width: 5.5rem; font-weight: 600; color: var(--accent); font-variant-numeric: tabular-nums; }
 .year-heading { margin: 2.5rem 0 1.25rem; color: var(--accent); font-size: 1.35rem; border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem; }
+
+/* Lab-centric hero, placeholders, research thrust cards */
+.hero-lab { display: grid; grid-template-columns: 1fr 280px; gap: 3rem; align-items: center; }
+.hero-lab .hero-lede { font-size: 1.125rem; }
+.placeholder {
+  display: flex; align-items: center; justify-content: center;
+  aspect-ratio: 4 / 3; width: 100%;
+  border: 2px dashed var(--rule); border-radius: var(--radius);
+  background: var(--bg-soft); color: var(--ink-faint); font-size: 0.875rem;
+}
+.placeholder-logo { aspect-ratio: 1; border-color: rgba(255,255,255,0.3); background: rgba(255,255,255,0.06); color: #cbd5e1; }
+.thrust-card { padding: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; color: inherit; }
+.thrust-card h3 { font-size: 1.0625rem; margin: 0; }
+.thrust-card p { color: var(--ink-soft); font-size: 0.9375rem; margin: 0; flex: 1; }
+.thrust-num { font-weight: 700; color: var(--teal); font-variant-numeric: tabular-nums; }
+.tag-row { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.5rem; }
+.tag { font-size: 0.75rem; padding: 0.15rem 0.55rem; border-radius: 999px; background: var(--accent-bg); color: var(--accent); }
+.director-card { display: flex; gap: 1.25rem; align-items: center; padding: 1.25rem; color: inherit; }
+.director-card img { width: 96px; height: 128px; object-fit: cover; border-radius: var(--radius); flex-shrink: 0; }
+@media (max-width: 900px) { .hero-lab { grid-template-columns: 1fr; } .placeholder-logo { display: none; } }

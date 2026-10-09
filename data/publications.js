@@ -54,7 +54,7 @@ window.PUBLICATIONS = {
     },
     {
       "year": 2026,
-      "authors": "Park SH, Park B, Kim K*, Park SJ*",
+      "authors": "Park SH, Park SJ*",
       "title": "Deep Neural Network-Based Optimal Design of Cylinder Structures Under Hydrostatic Pressure",
       "venue": "Applied Sciences",
       "index": "SCIE",
@@ -172,7 +172,7 @@ window.PUBLICATIONS = {
       "title": "Submarine Bistatic Target Strength Analysis based on Bistatic-to-monostatic Conversion",
       "venue": "The Journal of the Acoustical Society of Korea",
       "index": "Scopus",
-      "doi": "10.7776/ASK.2023.43.1"
+      "doi": "10.7776/ASK.2024.43.1.138"
     },
     {
       "year": 2024,

@@ -1,6 +1,6 @@
 # Prof. Sung-Ju Park — Academic Portfolio & Lab Website
 
-Official GitHub Pages website for **Professor Sung-Ju Park (박성주 교수님)**, head of the **Cyber-Physical Structural Systems Laboratory (CPSS Lab / 사이버물리 구조시스템 연구실)** at Tongmyong University.
+Official GitHub Pages website for **Professor Sung-Ju Park (박성주 교수님)**, head of the **Cyber-Physical Systems Laboratory (CPS Lab / 사이버물리시스템 연구실)** at Tongmyong University.
 
 - **Institution:** School of Electrical & Control Engineering / Department of Naval Architecture & Ocean Engineering, Tongmyong University
 - **Leadership Roles:** Vice Director of RISE Center (지역혁신중심 대학지원체계사업 부단장), Director of I-URP Center (대학혁신연구단지 조성사업단장), Board Director of SNAK (대한조선학회 홍보이사 & 플랫폼홍보활성화위원장), Technical Advisory Committee Member of DAPA (방위사업청 함정사업부 자문위원)
@@ -55,7 +55,6 @@ js/main.js         data를 화면에 그리는 코드 (고칠 일 없음)
 ## 📬 Contact & Inquiries
 
 - **Email:** [parksj0314@tu.ac.kr](mailto:parksj0314@tu.ac.kr) / [parksj0314@gmail.com](mailto:parksj0314@gmail.com)
-- **Phone:** +82-10-7556-1099
 - **Office:** Tongmyong University, 261 Suyeong-ro, Nam-gu, Busan 48520, Republic of Korea
 
 &copy; 2026 Prof. Sung-Ju Park. All rights reserved.
