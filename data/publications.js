@@ -3,24 +3,6 @@ window.PUBLICATIONS = {
   "journal": [
     {
       "year": 2026,
-      "authors": "Park SJ, Kim K*, Jeong CL, Park SH*",
-      "title": "A Comparative Study on the Performance of Deep Learning-based Overpressure Wave Prediction Models",
-      "venue": "International Journal of Modelling and Simulation",
-      "index": "SCIE",
-      "doi": "",
-      "note": "in press"
-    },
-    {
-      "year": 2026,
-      "authors": "Lee JY, Park B, Park SJ*, Kim K*",
-      "title": "Experimental Modal Analysis of Partially Wetted Box-like Structure Using Operating Modal Analysis Technique",
-      "venue": "Marine Structures",
-      "index": "SCIE",
-      "doi": "",
-      "note": "in press"
-    },
-    {
-      "year": 2026,
       "authors": "Lee JY, Cho DS, Kim K*, Park SJ*",
       "title": "Acoustic insertion loss induced by air bubble caps beneath one-side fluid-loaded plate",
       "venue": "Applied Acoustics",
@@ -61,7 +43,7 @@ window.PUBLICATIONS = {
       "doi": "10.3390/app16052229"
     },
     {
-      "year": 2025,
+      "year": 2026,
       "authors": "Park SH, Park B, Kim K, Park SJ*",
       "title": "A Physics-Informed Neural Network Framework Integrating Engineering Codes for Design Optimization of Stiffened Cylinders",
       "venue": "Thin-Walled Structures",
@@ -292,7 +274,7 @@ window.PUBLICATIONS = {
       "title": "Modeling, testing and calibration of ductile crack formation in grade DH36 ship plates",
       "venue": "Marine Structures",
       "index": "SCIE",
-      "doi": "10.1016/j.marstruc.2019.01.002"
+      "doi": "10.1016/j.marstruc.2019.03.003"
     },
     {
       "year": 2019,
@@ -300,7 +282,7 @@ window.PUBLICATIONS = {
       "title": "Simulation of ship collision and grounding damage using Hosford-Coulomb fracture model for shell elements",
       "venue": "Ocean Engineering",
       "index": "SCIE",
-      "doi": "10.1016/j.oceaneng.2019.01.036"
+      "doi": "10.1016/j.oceaneng.2019.01.004"
     },
     {
       "year": 2019,

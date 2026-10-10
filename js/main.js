@@ -61,7 +61,7 @@ function renderData() {
       const on = isOngoing(p);
       return `<div class="project-card searchable-item" data-category="${on ? 'ongoing' : 'completed'}">
         <div class="project-header"><span class="project-title">${esc(p.title)}</span>
-          <div><span class="badge badge-${on ? 'ongoing' : 'completed'}">${on ? 'Ongoing' : 'Completed'}</span> <span class="badge badge-${/책임자/.test(p.role) ? 'pi' : 'copi'}">${esc(p.role)}</span></div></div>
+          <div><span class="badge badge-${on ? 'ongoing' : 'completed'}">${on ? 'Ongoing' : 'Completed'}</span>${p.role ? ` <span class="badge badge-${/책임자/.test(p.role) ? 'pi' : 'copi'}">${esc(p.role)}</span>` : ''}</div></div>
         <div class="project-meta"><span><strong>Period:</strong> ${esc(p.start)} – ${esc(p.end)}</span><span><strong>Sponsor:</strong> ${esc(p.sponsor)}</span></div>
         ${p.task ? `<p style="margin:.5rem 0 0;font-size:.9375rem;color:var(--ink-soft);">${esc(p.task)}</p>` : ''}</div>`;
     };
