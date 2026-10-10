@@ -984,8 +984,8 @@ p { margin-top: 0; margin-bottom: 1rem; }
 .cm-since { font-size: 0.6875rem; font-weight: 600; color: var(--ink-faint); font-variant-numeric: tabular-nums; text-transform: uppercase; letter-spacing: 0.06em; }
 
 /* Lab logo */
-.brand-logo { height: 34px; width: auto; background: #ffffff; border-radius: 8px; padding: 2px 4px; }
-.hero-logo { background: #ffffff; border-radius: 16px; padding: 1.25rem; box-shadow: 0 10px 25px rgba(0,0,0,0.3); }
+.brand-logo { height: 38px; width: 38px; display: block; }
+.hero-logo { max-width: 300px; }
 .hero-logo img { display: block; width: 100%; height: auto; }
 @media (max-width: 900px) { .hero-logo { max-width: 360px; } }
 .site-nav a { white-space: nowrap; }
