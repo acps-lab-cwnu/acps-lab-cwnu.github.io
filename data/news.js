@@ -1,5 +1,6 @@
 // 소식: 교수·학생 수상 중심. 새 소식은 맨 위에 추가하세요. type은 "Faculty Award" / "Student Award" / "Event" 중 하나. 첫 페이지에는 위에서부터 5개만 표시됩니다.
 window.NEWS = [
+  {"date": "2027.03", "type": "Event", "text": "Prof. Park joins the Department of Artificial Intelligence & Defense Engineering, Changwon National University (국립창원대학교 인공지능디펜스공학과); ACPS Lab moves with him."},
   {"date": "2025", "type": "Faculty Award", "text": "논문상 · 대한조선학회"},
   {"date": "2025", "type": "Student Award", "text": "자율운항보트 경진대회 지식재산창의설계상(지식재산처장상) · 대한조선학회"},
   {"date": "2025", "type": "Faculty Award", "text": "표창패 · 부산광역시 남구청장"},
