@@ -497,7 +497,7 @@ p { margin-top: 0; margin-bottom: 1rem; }
 /* Journal Index Badges */
 .badge-scie { background-color: #dbeafe; color: #1d4ed8; border: 1px solid #93c5fd; }
 .badge-scopus { background-color: #f3e8ff; color: #6b21a8; border: 1px solid #d8b4fe; }
-.badge-kci { background-color: #e0e7ff; color: #3730a3; border: 1px solid #a5b4fc; }
+.badge-kci { background-color: #ccfbf1; color: #0f766e; border: 1px solid #5eead4; }
 .badge-patent { background-color: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
 .badge-award { background-color: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
 
@@ -513,7 +513,7 @@ p { margin-top: 0; margin-bottom: 1rem; }
 @media (prefers-color-scheme: dark) {
   .badge-scie { background-color: #1e3a8a; color: #bfdbfe; border-color: #2563eb; }
   .badge-scopus { background-color: #581c87; color: #e9d5ff; border-color: #7e22ce; }
-  .badge-kci { background-color: #312e81; color: #c7d2fe; border-color: #4338ca; }
+  .badge-kci { background-color: #134e4a; color: #99f6e4; border-color: #14b8a6; }
   .badge-patent { background-color: #78350f; color: #fde68a; border-color: #b45309; }
   .badge-award { background-color: #7f1d1d; color: #fecaca; border-color: #dc2626; }
 
