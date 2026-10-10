@@ -26,6 +26,7 @@ function textList(title, items) {
 function renderData() {
   const P = window.PUBLICATIONS, J = P ? P.journal : [], PR = window.PROJECTS || [];
   const counts = { journal: J.length, projects: PR.length, ongoing: PR.filter(isOngoing).length, transfers: P ? P.transfers.length : 0, patents: P ? P.patents.length : 0,
+    conferences: P ? P.conference_international.length + P.conference_domestic.length : 0,
     'student-awards': (window.NEWS || []).filter(x => x.type === 'Student Award').length };
   document.querySelectorAll('[data-count]').forEach(el => { el.textContent = counts[el.dataset.count] ?? ''; });
 
