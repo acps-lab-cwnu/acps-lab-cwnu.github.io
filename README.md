@@ -36,7 +36,7 @@ js/main.js         data를 화면에 그리는 코드 (고칠 일 없음)
 |---|---|---|
 | 논문 추가 | `data/publications.js` | `"journal": [` 바로 아래에 항목 복사·붙여넣기. `"featured": true`면 첫 페이지에 표시 |
 | 과제 추가 | `data/projects.js` | 맨 위에 항목 추가. `end`(YYYY.MM)가 지나면 자동으로 '완료' |
-| 소식 추가 | `data/news.js` | 맨 위에 추가. 첫 페이지엔 최신 5개 |
+| 수상·소식 추가 | `data/news.js` | 맨 위에 추가. `type`은 Faculty Award / Student Award / Event. People 페이지 수상 목록도 여기서 자동 생성 |
 | 소개·연구분야 | `index.html`, `research.html` | HTML 직접 수정 |
 
 - 항목 사이에는 쉼표(`,`)가 필요하고, **마지막 항목 뒤에는 쉼표를 붙이지 않습니다.** 틀리면 해당 목록이 통째로 안 보입니다.
@@ -45,10 +45,9 @@ js/main.js         data를 화면에 그리는 코드 (고칠 일 없음)
 
 ## 🚀 배포 (GitHub Pages)
 
-1. GitHub에서 `<아이디>.github.io` 이름으로 **Public** 저장소 생성
-2. `git remote add origin https://github.com/<아이디>/<아이디>.github.io.git` → `git push -u origin main`
-3. Settings → Pages → Source: `Deploy from a branch`, Branch: `main` / `(root)` → Save
-4. 1~2분 뒤 `https://<아이디>.github.io` 에서 확인. 이후에는 수정 → commit → push 만 하면 자동 반영
+- 저장소: `https://github.com/acps-lab-cwnu/acps-lab-cwnu.github.io`
+- 사이트: `https://acps-lab-cwnu.github.io`
+- 수정 후 `git add -A` → `git commit -m "메시지"` → `git push` 하면 1~2분 뒤 자동 반영
 
 ---
 

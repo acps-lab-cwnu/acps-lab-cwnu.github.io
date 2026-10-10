@@ -953,3 +953,8 @@ p { margin-top: 0; margin-bottom: 1rem; }
 .director-card { display: flex; gap: 1.25rem; align-items: center; padding: 1.25rem; color: inherit; }
 .director-card img { width: 96px; height: 128px; object-fit: cover; border-radius: var(--radius); flex-shrink: 0; }
 @media (max-width: 900px) { .hero-lab { grid-template-columns: 1fr; } .placeholder-logo { display: none; } }
+
+/* Award lists rendered from data/news.js */
+.award-list { padding-left: 1.25rem; color: var(--ink-soft); margin: 0; line-height: 1.75; }
+.award-list li { margin-bottom: 0.4rem; }
+.award-cols { columns: 2 22rem; column-gap: 2rem; }
