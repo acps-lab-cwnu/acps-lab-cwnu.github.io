@@ -37,6 +37,24 @@ function renderData() {
     news.innerHTML = window.NEWS.slice(0, n).map(x => `<li class="searchable-item" data-category="${esc((x.type || '').split(' ')[0].toLowerCase())}"><span class="news-date">${esc(x.date)}</span> ${x.type ? `<span class="badge badge-${badge[x.type] || 'scie'}">${esc(x.type)}</span> ` : ''}${esc(x.text)}</li>`).join('');
   }
 
+  // Research page: papers and projects per thrust tag
+  document.querySelectorAll('[data-thrust-count]').forEach(el => {
+    const [kind, key] = el.dataset.thrustCount.split(':');
+    const n = (kind === 'papers' ? J : PR).filter(x => x.thrust === key).length;
+    el.textContent = `(${n})`;
+  });
+  document.querySelectorAll('[data-thrust-papers]').forEach(ol => {
+    const list = J.filter(p => p.thrust === ol.dataset.thrustPapers).slice(0, +ol.dataset.limit || 4);
+    ol.innerHTML = list.map(p => `<li>${p.doi ? `<a href="https://doi.org/${esc(p.doi)}" target="_blank" rel="noopener">${esc(p.title)}</a>` : esc(p.title)}
+      <span class="meta">${boldMe(p.authors)} · ${esc(p.venue)}, ${p.year}</span></li>`).join('');
+  });
+  document.querySelectorAll('[data-thrust-projects]').forEach(ul => {
+    const all = PR.filter(p => p.thrust === ul.dataset.thrustProjects);
+    const list = all.filter(isOngoing).concat(all.filter(p => !isOngoing(p))).slice(0, +ul.dataset.limit || 4);
+    ul.innerHTML = list.map(p => `<li>${isOngoing(p) ? '<span class="badge badge-ongoing">Ongoing</span>' : ''}${esc(p.title)}
+      <span class="meta">${esc(p.sponsor)} · ${esc(p.start)} – ${esc(p.end)}</span></li>`).join('');
+  });
+
   const featured = document.getElementById('featured-pubs');
   if (featured) featured.innerHTML = J.filter(p => p.featured).map(p => `<div class="card" style="padding:1.5rem;">
       <span class="badge badge-scie" style="margin-bottom:.75rem;">${esc(p.venue)} (${p.year})</span>

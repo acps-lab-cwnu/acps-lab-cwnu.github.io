@@ -1,4 +1,4 @@
-// 논문·학회·특허 목록. 새 항목은 해당 배열 맨 위에 추가. featured: true 인 논문은 첫 페이지에 표시됩니다.
+// thrust: structures | acoustics | survivability | ai-twin ("" = none). 논문·학회·특허 목록. 새 항목은 해당 배열 맨 위에 추가. featured: true 인 논문은 첫 페이지에 표시됩니다.
 window.PUBLICATIONS = {
   "journal": [
     {
@@ -8,7 +8,8 @@ window.PUBLICATIONS = {
       "venue": "Applied Acoustics",
       "index": "SCIE",
       "doi": "10.1016/j.apacoust.2026.111485",
-      "featured": true
+      "featured": true,
+      "thrust": "acoustics"
     },
     {
       "year": 2026,
@@ -16,7 +17,8 @@ window.PUBLICATIONS = {
       "title": "Design Optimization of Submarine Torispherical Domes using Data Information Integrated Neural Networks",
       "venue": "International Journal of Naval Architecture and Ocean Engineering",
       "index": "SCIE",
-      "doi": "10.1016/j.ijnaoe.2026.100780"
+      "doi": "10.1016/j.ijnaoe.2026.100780",
+      "thrust": "ai-twin"
     },
     {
       "year": 2026,
@@ -24,7 +26,8 @@ window.PUBLICATIONS = {
       "title": "Enhancement of the Computational Performance for Near-and Far-Field Target Strength Analysis Using OptiX-based Shooting and Bouncing Rays Method",
       "venue": "International Journal of Naval Architecture and Ocean Engineering",
       "index": "SCIE",
-      "doi": "10.1016/j.ijnaoe.2026.100778"
+      "doi": "10.1016/j.ijnaoe.2026.100778",
+      "thrust": "acoustics"
     },
     {
       "year": 2026,
@@ -32,7 +35,8 @@ window.PUBLICATIONS = {
       "title": "Experimental Procedure for Target Strength Measurement in a Small Water Tank Using Cumulative Energy Method",
       "venue": "International Journal of Naval Architecture and Ocean Engineering",
       "index": "SCIE",
-      "doi": "10.1016/j.ijnaoe.2026.100760"
+      "doi": "10.1016/j.ijnaoe.2026.100760",
+      "thrust": "acoustics"
     },
     {
       "year": 2026,
@@ -40,7 +44,8 @@ window.PUBLICATIONS = {
       "title": "Deep Neural Network-Based Optimal Design of Cylinder Structures Under Hydrostatic Pressure",
       "venue": "Applied Sciences",
       "index": "SCIE",
-      "doi": "10.3390/app16052229"
+      "doi": "10.3390/app16052229",
+      "thrust": "ai-twin"
     },
     {
       "year": 2026,
@@ -49,7 +54,8 @@ window.PUBLICATIONS = {
       "venue": "Thin-Walled Structures",
       "index": "SCIE",
       "doi": "10.1016/j.tws.2025.114367",
-      "featured": true
+      "featured": true,
+      "thrust": "ai-twin"
     },
     {
       "year": 2025,
@@ -58,7 +64,8 @@ window.PUBLICATIONS = {
       "venue": "Engineering Structures",
       "index": "SCIE",
       "doi": "10.1016/j.engstruct.2025.121397",
-      "featured": true
+      "featured": true,
+      "thrust": "ai-twin"
     },
     {
       "year": 2025,
@@ -66,7 +73,8 @@ window.PUBLICATIONS = {
       "title": "Development of a Design Formula for Estimating the Residual Strength of Corroded Stiffened Cylindrical Structures",
       "venue": "Journal of Marine Science and Engineering",
       "index": "SCIE",
-      "doi": "10.3390/jmse13071381"
+      "doi": "10.3390/jmse13071381",
+      "thrust": "structures"
     },
     {
       "year": 2025,
@@ -74,7 +82,8 @@ window.PUBLICATIONS = {
       "title": "Comparative Study on Hyperelastic Constitutive Models for the Static and Dynamic Behavior of Resilient Mounts",
       "venue": "Materials",
       "index": "SCIE",
-      "doi": "10.3390/ma18020311"
+      "doi": "10.3390/ma18020311",
+      "thrust": "acoustics"
     },
     {
       "year": 2025,
@@ -82,7 +91,8 @@ window.PUBLICATIONS = {
       "title": "Simplified Target Strength Analysis Procedure of an Underwater Vehicle Considering Target Strength Absorbing Materials",
       "venue": "Journal of Marine Science and Engineering",
       "index": "SCIE",
-      "doi": "10.3390/jmse13010062"
+      "doi": "10.3390/jmse13010062",
+      "thrust": "acoustics"
     },
     {
       "year": 2024,
@@ -90,7 +100,8 @@ window.PUBLICATIONS = {
       "title": "Numerical study of strand wire geometry effect on mechanical behavior of dynamic submarine power cables",
       "venue": "Mechanics Based Design of Structures and Machines",
       "index": "SCIE",
-      "doi": "10.1080/15397734.2024.2444990"
+      "doi": "10.1080/15397734.2024.2444990",
+      "thrust": "structures"
     },
     {
       "year": 2024,
@@ -98,7 +109,8 @@ window.PUBLICATIONS = {
       "title": "Hydrodynamic Performance and Mooring Safety Assessment of an Offshore Floating Movable Fish Cage",
       "venue": "Journal of Marine Science and Engineering",
       "index": "SCIE",
-      "doi": "10.3390/jmse12122351"
+      "doi": "10.3390/jmse12122351",
+      "thrust": "structures"
     },
     {
       "year": 2024,
@@ -106,7 +118,8 @@ window.PUBLICATIONS = {
       "title": "Comparison of Output Characteristic of Six-Phase Synchronous Motor with Different Winding Configurations and Rotor Shape Variations",
       "venue": "The Transactions of the Korean Institute of Electrical Engineers",
       "index": "Scopus",
-      "doi": "10.5370/KIEE.2024.73.12.2247"
+      "doi": "10.5370/KIEE.2024.73.12.2247",
+      "thrust": ""
     },
     {
       "year": 2024,
@@ -114,7 +127,8 @@ window.PUBLICATIONS = {
       "title": "Study on Dynamic Characteristics of Resilient Mount Under Preload",
       "venue": "Materials",
       "index": "SCIE",
-      "doi": "10.3390/ma17205096"
+      "doi": "10.3390/ma17205096",
+      "thrust": "acoustics"
     },
     {
       "year": 2024,
@@ -122,7 +136,8 @@ window.PUBLICATIONS = {
       "title": "Riser Configuration Design for a 15-MW Floating Offshore Wind Turbine Integrated with a Green Hydrogen Facility",
       "venue": "Journal of Ocean Engineering and Technology",
       "index": "Scopus",
-      "doi": "10.26748/KSOE.2024.048"
+      "doi": "10.26748/KSOE.2024.048",
+      "thrust": "structures"
     },
     {
       "year": 2024,
@@ -130,7 +145,8 @@ window.PUBLICATIONS = {
       "title": "Experimental validation on structure-borne underwater radiated noise transfer function analysis for marine structure",
       "venue": "International Journal of Naval Architecture and Ocean Engineering",
       "index": "SCIE",
-      "doi": "10.1016/j.ijnaoe.2024.100585"
+      "doi": "10.1016/j.ijnaoe.2024.100585",
+      "thrust": "acoustics"
     },
     {
       "year": 2024,
@@ -138,7 +154,8 @@ window.PUBLICATIONS = {
       "title": "Study on Ductile Fracture behavior of Hydrogen-Charged API Pipeline Steel",
       "venue": "Mechanics Based Design of Structures and Machines",
       "index": "SCIE",
-      "doi": "10.1080/15397734.2024.2310659"
+      "doi": "10.1080/15397734.2024.2310659",
+      "thrust": "structures"
     },
     {
       "year": 2024,
@@ -146,7 +163,8 @@ window.PUBLICATIONS = {
       "title": "Numerical Study on a Ductile Fracture Model in Pre-Cracked Tension Tests of SUS304L",
       "venue": "Materials",
       "index": "SCIE",
-      "doi": "10.3390/ma17020276"
+      "doi": "10.3390/ma17020276",
+      "thrust": "structures"
     },
     {
       "year": 2024,
@@ -154,7 +172,8 @@ window.PUBLICATIONS = {
       "title": "Submarine Bistatic Target Strength Analysis based on Bistatic-to-monostatic Conversion",
       "venue": "The Journal of the Acoustical Society of Korea",
       "index": "Scopus",
-      "doi": "10.7776/ASK.2024.43.1.138"
+      "doi": "10.7776/ASK.2024.43.1.138",
+      "thrust": "acoustics"
     },
     {
       "year": 2024,
@@ -162,7 +181,8 @@ window.PUBLICATIONS = {
       "title": "A Simple Tank Test for Inversion of Equivalent Acoustic Impedance of an Underwater Flat Plate",
       "venue": "Transactions of the Korean Society for Noise and Vibration Engineering",
       "index": "KCI",
-      "doi": "10.5050/KSNVE.2024.34.6.700"
+      "doi": "10.5050/KSNVE.2024.34.6.700",
+      "thrust": "acoustics"
     },
     {
       "year": 2024,
@@ -170,7 +190,8 @@ window.PUBLICATIONS = {
       "title": "Development of Estimation Program for Hit Distribution by Radar-homing Anti-ship Missile Considering Electromagnetic Wave Scatter Distribution of Naval Ship",
       "venue": "Journal of the Society of Naval Architects of Korea",
       "index": "KCI",
-      "doi": "10.3744/SNAK.2024.61.5.352"
+      "doi": "10.3744/SNAK.2024.61.5.352",
+      "thrust": "survivability"
     },
     {
       "year": 2024,
@@ -178,7 +199,8 @@ window.PUBLICATIONS = {
       "title": "Experimental validation on underwater sound speed measurement method using cross-correlation of time-domain acoustic signals in a reverberant water tank",
       "venue": "Journal of the Society of Naval Architects of Korea",
       "index": "KCI",
-      "doi": "10.3744/SNAK.2024.61.1.1"
+      "doi": "10.3744/SNAK.2024.61.1.1",
+      "thrust": "acoustics"
     },
     {
       "year": 2023,
@@ -186,7 +208,8 @@ window.PUBLICATIONS = {
       "title": "Numerical analysis of acoustic radiation efficiency of plate structures with air bubble layers",
       "venue": "The Journal of the Acoustical Society of Korea",
       "index": "Scopus",
-      "doi": "10.7776/ASK.2023.42.3.227"
+      "doi": "10.7776/ASK.2023.42.3.227",
+      "thrust": "acoustics"
     },
     {
       "year": 2023,
@@ -194,7 +217,8 @@ window.PUBLICATIONS = {
       "title": "Applicability and reliability of an experimental method measuring underwater acoustic radiation efficiency of floating box-type plate structures in a reverberant water tank",
       "venue": "International Journal of Naval Architecture and Ocean Engineering",
       "index": "SCIE",
-      "doi": "10.1016/j.ijnaoe.2023.100553"
+      "doi": "10.1016/j.ijnaoe.2023.100553",
+      "thrust": "acoustics"
     },
     {
       "year": 2023,
@@ -202,7 +226,8 @@ window.PUBLICATIONS = {
       "title": "Application of ductile fracture model for the prediction of low cycle fatigue in structural steel",
       "venue": "Engineering Fracture Mechanics",
       "index": "SCIE",
-      "doi": "10.1016/j.engfracmech.2023.109469"
+      "doi": "10.1016/j.engfracmech.2023.109469",
+      "thrust": "structures"
     },
     {
       "year": 2022,
@@ -210,7 +235,8 @@ window.PUBLICATIONS = {
       "title": "Analysis of shear buckling for sinusoidal corrugated web beam",
       "venue": "Mechanics Based Design of Structures and Machines",
       "index": "SCIE",
-      "doi": "10.1080/15397734.2022.2075381"
+      "doi": "10.1080/15397734.2022.2075381",
+      "thrust": "structures"
     },
     {
       "year": 2022,
@@ -218,7 +244,8 @@ window.PUBLICATIONS = {
       "title": "Numerical Investigation of the Ultimate Strength of D-Ring Devices and Deck Structures",
       "venue": "Journal of Marine Science and Engineering",
       "index": "SCIE",
-      "doi": "10.3390/jmse10070952"
+      "doi": "10.3390/jmse10070952",
+      "thrust": "structures"
     },
     {
       "year": 2021,
@@ -226,7 +253,8 @@ window.PUBLICATIONS = {
       "title": "Localized Necking Model for Punching Fracture Simulation in Unstiffened and Stiffened Panels",
       "venue": "Applied Sciences",
       "index": "SCIE",
-      "doi": "10.3390/app11093774"
+      "doi": "10.3390/app11093774",
+      "thrust": "structures"
     },
     {
       "year": 2020,
@@ -234,7 +262,8 @@ window.PUBLICATIONS = {
       "title": "Use of localized necking and fracture as a failure criterion in ship collision analysis",
       "venue": "Marine Structures",
       "index": "SCIE",
-      "doi": "10.1016/j.marstruc.2020.102787"
+      "doi": "10.1016/j.marstruc.2020.102787",
+      "thrust": "structures"
     },
     {
       "year": 2020,
@@ -242,7 +271,8 @@ window.PUBLICATIONS = {
       "title": "Comparative study on ductile fracture prediction of high-tensile strength marine structural steels",
       "venue": "Ships and Offshore Structures",
       "index": "SCIE",
-      "doi": "10.1080/17445302.2020.1743552"
+      "doi": "10.1080/17445302.2020.1743552",
+      "thrust": "structures"
     },
     {
       "year": 2020,
@@ -250,7 +280,8 @@ window.PUBLICATIONS = {
       "title": "Material Property-Estimate Technique Based on Natural Frequency for Updating Finite Element Model of Orthotropic Beams",
       "venue": "Journal of Ocean Engineering and Technology",
       "index": "KCI",
-      "doi": "10.26748/KSOE.2020.070"
+      "doi": "10.26748/KSOE.2020.070",
+      "thrust": "structures"
     },
     {
       "year": 2020,
@@ -258,7 +289,8 @@ window.PUBLICATIONS = {
       "title": "Punching Fracture Experiments and Simulations of Unstiffened and Stiffened Panels for Ships and Offshore Structures",
       "venue": "Journal of Ocean Engineering and Technology",
       "index": "KCI",
-      "doi": "10.26748/KSOE.2020.023"
+      "doi": "10.26748/KSOE.2020.023",
+      "thrust": "structures"
     },
     {
       "year": 2019,
@@ -266,7 +298,8 @@ window.PUBLICATIONS = {
       "title": "Ductile fracture prediction of EH36 grade steel based on Hosford-Coulomb model",
       "venue": "Ships and Offshore Structures",
       "index": "SCIE",
-      "doi": "10.1080/17445302.2019.1565300"
+      "doi": "10.1080/17445302.2019.1565300",
+      "thrust": "structures"
     },
     {
       "year": 2019,
@@ -274,7 +307,8 @@ window.PUBLICATIONS = {
       "title": "Modeling, testing and calibration of ductile crack formation in grade DH36 ship plates",
       "venue": "Marine Structures",
       "index": "SCIE",
-      "doi": "10.1016/j.marstruc.2019.03.003"
+      "doi": "10.1016/j.marstruc.2019.03.003",
+      "thrust": "structures"
     },
     {
       "year": 2019,
@@ -282,7 +316,8 @@ window.PUBLICATIONS = {
       "title": "Simulation of ship collision and grounding damage using Hosford-Coulomb fracture model for shell elements",
       "venue": "Ocean Engineering",
       "index": "SCIE",
-      "doi": "10.1016/j.oceaneng.2019.01.004"
+      "doi": "10.1016/j.oceaneng.2019.01.004",
+      "thrust": "structures"
     },
     {
       "year": 2019,
@@ -290,7 +325,8 @@ window.PUBLICATIONS = {
       "title": "Ductile fracture of a marine structural steel based on HC-DSSE combined fracture strain formulation",
       "venue": "Journal of the Society of Naval Architects of Korea",
       "index": "KCI",
-      "doi": "10.3744/SNAK.2019.56.1.082"
+      "doi": "10.3744/SNAK.2019.56.1.082",
+      "thrust": "structures"
     },
     {
       "year": 2019,
@@ -298,7 +334,8 @@ window.PUBLICATIONS = {
       "title": "Comparative study on various ductile fracture models for marine structural steel EH36",
       "venue": "Journal of Ocean Engineering and Technology",
       "index": "KCI",
-      "doi": "10.26748/KSOE.2019.038"
+      "doi": "10.26748/KSOE.2019.038",
+      "thrust": "structures"
     },
     {
       "year": 2018,
@@ -306,7 +343,8 @@ window.PUBLICATIONS = {
       "title": "Ductile fracture prediction of high tensile steel EH36 using new damage functions",
       "venue": "Ships and Offshore Structures",
       "index": "SCIE",
-      "doi": "10.1080/17445302.2018.1426433"
+      "doi": "10.1080/17445302.2018.1426433",
+      "thrust": "structures"
     },
     {
       "year": 2017,
@@ -314,7 +352,8 @@ window.PUBLICATIONS = {
       "title": "Ductile fracture predictions of high strength steel (EH36) using linear and non-linear damage evolution models",
       "venue": "Journal of Ocean Engineering and Technology",
       "index": "KCI",
-      "doi": "10.26748/KSOE.2017.08.31.4.288"
+      "doi": "10.26748/KSOE.2017.08.31.4.288",
+      "thrust": "structures"
     },
     {
       "year": 2016,
@@ -322,7 +361,8 @@ window.PUBLICATIONS = {
       "title": "Punching fracture simulations of circular unstiffened steel plates using three-dimensional fracture surface",
       "venue": "Journal of Ocean Engineering and Technology",
       "index": "KCI",
-      "doi": "10.5574/KSOE.2016.30.6.474"
+      "doi": "10.5574/KSOE.2016.30.6.474",
+      "thrust": "structures"
     },
     {
       "year": 2016,
@@ -330,7 +370,8 @@ window.PUBLICATIONS = {
       "title": "Study on crashworthiness of icebreaker steel: Part I steel properties",
       "venue": "Journal of Ocean Engineering and Technology",
       "index": "KCI",
-      "doi": "10.5574/KSOE.2016.30.4.268"
+      "doi": "10.5574/KSOE.2016.30.4.268",
+      "thrust": "structures"
     },
     {
       "year": 2015,
@@ -338,7 +379,8 @@ window.PUBLICATIONS = {
       "title": "Failure strain prediction of an arctic class marine steel (EH36) in average stress triaxiality regime",
       "venue": "Modern Physics Letters B",
       "index": "SCIE",
-      "doi": "10.1142/S0217984915400084"
+      "doi": "10.1142/S0217984915400084",
+      "thrust": "structures"
     },
     {
       "year": 2015,
@@ -346,7 +388,8 @@ window.PUBLICATIONS = {
       "title": "Flow stress properties of elastic resistance welded small-sized subsea pipeline subjected to temperature and strain rate variations",
       "venue": "Journal of Ocean Engineering and Technology",
       "index": "KCI",
-      "doi": "10.5574/KSOE.2015.29.3.241"
+      "doi": "10.5574/KSOE.2015.29.3.241",
+      "thrust": "structures"
     },
     {
       "year": 2015,
@@ -354,7 +397,8 @@ window.PUBLICATIONS = {
       "title": "Design of high speed tensile test machine for flow stress under intermediate strain rate condition",
       "venue": "Journal of Ocean Engineering and Technology",
       "index": "KCI",
-      "doi": "10.5574/KSOE.2015.29.1.034"
+      "doi": "10.5574/KSOE.2015.29.1.034",
+      "thrust": "structures"
     },
     {
       "year": 2015,
@@ -362,7 +406,8 @@ window.PUBLICATIONS = {
       "title": "Development of three-dimensional fracture strain surface in average stress triaxiality and average normalized Lode parameter domain for arctic high tensile steel: Part II formulation of fracture strain surface",
       "venue": "Journal of Ocean Engineering and Technology",
       "index": "KCI",
-      "doi": "10.5574/KSOE.2015.29.6.454"
+      "doi": "10.5574/KSOE.2015.29.6.454",
+      "thrust": "structures"
     },
     {
       "year": 2015,
@@ -370,7 +415,8 @@ window.PUBLICATIONS = {
       "title": "Development of three-dimensional fracture strain surface in average stress triaxiality and average normalized Lode parameter domain for arctic high tensile steel: Part I theoretical background and experimental studies",
       "venue": "Journal of Ocean Engineering and Technology",
       "index": "KCI",
-      "doi": "10.5574/KSOE.2015.29.6.445"
+      "doi": "10.5574/KSOE.2015.29.6.445",
+      "thrust": "structures"
     }
   ],
   "conference_international": [

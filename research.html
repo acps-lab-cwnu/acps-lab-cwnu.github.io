@@ -33,125 +33,92 @@
   <!-- Page Banner -->
   <section style="background: var(--bg-soft); padding: 3rem 0; border-bottom: 1px solid var(--rule);">
     <div class="wrap">
-      <span class="section-label">Research Areas & Methodology</span>
-      <h1>Research Pillars & Experimental Facilities</h1>
+      <span class="section-label">Research</span>
+      <h1>Four research thrusts</h1>
       <p style="color: var(--ink-soft); max-width: var(--measure); margin-bottom: 0;">
-        Five research thrusts form one applied loop: experiments define the physics, simulation and physics-informed AI make it usable, and digital twins carry it into engineering practice.
+        Structural integrity is the foundation; acoustics and survivability extend it to naval platforms; physics-informed AI and digital twins make it fast and live.
+        Each thrust lists its methods, figures, recent papers and projects. For how these grew over time, see the <a href="people.html#trajectory">Career Milestone Summary</a>.
       </p>
     </div>
   </section>
 
-  <!-- Pillar 1: Structural Mechanics -->
-  <section class="section" id="structures">
+  <!-- Research thrusts (papers and projects are filled from data/*.js by thrust tag) -->
+  <section class="section th" id="structures">
     <div class="wrap">
-      <div class="grid-2" style="align-items: center; gap: 3rem;">
-        <div>
-          <span class="section-label">Pillar 1</span>
-          <h2>Structural Mechanics, Fracture & Material DB</h2>
-          <p>
-            Accidental impacts such as ship collisions, groundings, and subsea pipeline failures require precise damage prediction. We develop 3D ductile fracture surfaces (Hosford-Coulomb and HC-DSSE formulations) calibrated for shell and solid elements in FE simulations.
-          </p>
-          <ul style="padding-left: 1.25rem; color: var(--ink-soft); margin-bottom: 1.5rem;">
-            <li><strong>Extreme Environment Material DB:</strong> Cryogenic testing (-197°C), high strain rate tensile behavior for marine steels (A, AH36, DH36, EH36, SUS304L, API 5L).</li>
-            <li><strong>Hydrogen Embrittlement:</strong> Ductile fracture behavior of hydrogen-charged API pipeline steel for subsea transport safety.</li>
-            <li><strong>Low Cycle Fatigue & Damage Evolution:</strong> Linear and non-linear damage accumulation models applied to structural health assessment.</li>
-          </ul>
+      <article class="ph ph-1">
+        <div class="ph-text">
+          <div class="ph-head"><span class="ph-num">01</span><span class="ph-label">Thrust 1 · Phase 1 Foundation</span></div>
+          <h2 class="th-title">Structural integrity under extreme conditions</h2>
+          <p class="ph-ko" lang="ko">극한 환경 구조 건전성 평가</p>
+          <p class="th-lead">How marine steels and structures deform, fracture and fatigue under impact, cryogenic temperature and hydrogen, and how to carry that into full-scale design assessment.</p>
+          <ul class="th-focus"><li>Material database: quasi-static, high-strain-rate, cryogenic and hydrogen-charged tests of ship, pipeline and tank steels</li><li>Fracture and fatigue models (Hosford–Coulomb, HC-DSSE, damage evolution) implemented as FE user subroutines</li><li>Collision, grounding, punching and ultimate strength of ship and offshore structures</li><li>Subsea and offshore components: hydrogen pipelines, dynamic power cables, risers, moorings</li></ul>
+          <div class="tag-row"><span class="tag">Hosford–Coulomb</span><span class="tag">VUMAT</span><span class="tag">cryogenic</span><span class="tag">hydrogen embrittlement</span><span class="tag">low-cycle fatigue</span></div>
         </div>
-        <div>
-          <div class="placeholder" role="img" aria-label="Structural Mechanics & Extreme Testing Rigs (figure in preparation)">Figure in preparation</div>
-        </div>
+        <div class="ph-media"><a class="ph-tile ph-photo ph-hero" href="images/trajectory/p1-collision.webp" target="_blank" rel="noopener"><picture><source srcset="images/trajectory/p1-collision.jpg" media="(prefers-reduced-motion: reduce)"><img src="images/trajectory/p1-collision.webp" alt="Hull damage simulation (animation)" loading="lazy"></picture><span class="ph-cap">Hull damage simulation</span></a><a class="ph-tile ph-photo" href="images/trajectory/p1-camera.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p1-camera.jpg" alt="Temperature chamber and high-speed camera" loading="lazy"><span class="ph-cap">Temperature chamber and high-speed camera</span></a><a class="ph-tile ph-photo" href="images/trajectory/p1-grips.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p1-grips.jpg" alt="Tension test grips" loading="lazy"><span class="ph-cap">Tension test grips</span></a><a class="ph-tile ph-plot" href="images/trajectory/p1-rig.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p1-rig.jpg" alt="Test-rig design" loading="lazy"><span class="ph-cap">Test-rig design</span></a><a class="ph-tile ph-photo" href="images/trajectory/p1-specimen.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p1-specimen.jpg" alt="Fatigue life test" loading="lazy"><span class="ph-cap">Fatigue life test</span></a><a class="ph-tile ph-plot" href="images/trajectory/p1-offshore-fe.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p1-offshore-fe.jpg" alt="Offshore wind substructure FE model" loading="lazy"><span class="ph-cap">Offshore wind substructure FE model</span></a></div>
+      </article>
+      <div class="th-out ph-1">
+        <div><h3>Selected papers <span data-thrust-count="papers:structures"></span></h3><ol class="th-list" data-thrust-papers="structures" data-limit="4"></ol></div>
+        <div><h3>Projects <span data-thrust-count="projects:structures"></span></h3><ul class="th-list" data-thrust-projects="structures" data-limit="4"></ul></div>
       </div>
     </div>
   </section>
 
-  <!-- Pillar 2: Underwater Acoustics -->
-  <section class="section section-tint" id="acoustics">
+  <section class="section section-tint th" id="acoustics">
     <div class="wrap">
-      <div class="grid-2" style="align-items: center; gap: 3rem;">
-        <div>
-          <div class="placeholder" role="img" aria-label="Underwater Radiated Noise and Acoustic TS (figure in preparation)">Figure in preparation</div>
+      <article class="ph ph-2 ph-flip">
+        <div class="ph-text">
+          <div class="ph-head"><span class="ph-num">02</span><span class="ph-label">Thrust 2 · Phase 2 Expansion</span></div>
+          <h2 class="th-title">Underwater acoustics and signature control</h2>
+          <p class="ph-ko" lang="ko">수중 음향 및 신호 제어</p>
+          <p class="th-lead">How hull structures radiate and scatter sound underwater, and how bubble layers, mounts and coatings make naval platforms quieter.</p>
+          <ul class="th-focus"><li>Underwater radiated noise: structure-borne transfer functions, propeller-induced vibration and noise</li><li>Noise reduction: air-bubble layers, resilient mounts and hyperelastic material models</li><li>Target strength: water-tank cumulative-energy measurement, bistatic analysis, OptiX ray tracing, absorbing materials</li></ul>
+          <div class="tag-row"><span class="tag">URN</span><span class="tag">target strength</span><span class="tag">bubble layer</span><span class="tag">resilient mount</span><span class="tag">water tank</span></div>
         </div>
-        <div>
-          <span class="section-label">Pillar 2</span>
-          <h2>Underwater Radiated Noise (URN) & Target Strength (TS)</h2>
-          <p>
-            Minimizing structure-borne acoustic signatures is vital for naval stealth and marine environmental protection. We perform multiphysics acoustic-structure interaction simulations and experimental tank validations.
-          </p>
-          <ul style="padding-left: 1.25rem; color: var(--ink-soft); margin-bottom: 1.5rem;">
-            <li><strong>Bubble Layer Noise Reduction:</strong> Numerical analysis of acoustic insertion loss and radiation efficiency in wetted plates with air bubble caps.</li>
-            <li><strong>Target Strength (TS) Analysis:</strong> Small-water-tank cumulative energy method and OptiX shooting-and-bouncing rays (SBR) for submarine bistatic TS prediction.</li>
-            <li><strong>Resilient Mount Dynamics:</strong> Dynamic behavior and hyperelastic constitutive modeling under static preload.</li>
-          </ul>
-        </div>
+        <div class="ph-media"><a class="ph-tile ph-plot ph-hero" href="images/trajectory/p2-polar.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p2-polar.jpg" alt="Acoustic scattering directivity" loading="lazy"><span class="ph-cap">Acoustic scattering directivity</span></a><a class="ph-tile ph-plot" href="images/trajectory/p2-radiation.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p2-radiation.jpg" alt="Radiation efficiency with bubble layers" loading="lazy"><span class="ph-cap">Radiation efficiency with bubble layers</span></a><a class="ph-tile ph-plot" href="images/trajectory/p2-tank.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p2-tank.jpg" alt="Water-tank acoustic measurement" loading="lazy"><span class="ph-cap">Water-tank acoustic measurement</span></a><a class="ph-tile ph-plot ph-wide" href="images/trajectory/p2-transmissibility.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p2-transmissibility.jpg" alt="Resilient mount transmissibility" loading="lazy"><span class="ph-cap">Resilient mount transmissibility</span></a></div>
+      </article>
+      <div class="th-out ph-2">
+        <div><h3>Selected papers <span data-thrust-count="papers:acoustics"></span></h3><ol class="th-list" data-thrust-papers="acoustics" data-limit="4"></ol></div>
+        <div><h3>Projects <span data-thrust-count="projects:acoustics"></span></h3><ul class="th-list" data-thrust-projects="acoustics" data-limit="4"></ul></div>
       </div>
     </div>
   </section>
 
-  <!-- Pillar 3: RCS & Stealth -->
-  <section class="section" id="stealth">
+  <section class="section th" id="survivability">
     <div class="wrap">
-      <div class="grid-2" style="align-items: center; gap: 3rem;">
-        <div>
-          <span class="section-label">Pillar 3</span>
-          <h2>Radar Cross Section (RCS) & Naval Survivability</h2>
-          <p>
-            Radar stealth and missile threat vulnerability assessment determine combatant survivability. We design electromagnetic scattering models and impact algorithms for modern naval surface ships.
-          </p>
-          <ul style="padding-left: 1.25rem; color: var(--ink-soft); margin-bottom: 1.5rem;">
-            <li><strong>Hit Location Estimation Algorithms:</strong> Hit distribution estimation software for radar-homing anti-ship missiles considering EM scatter distribution.</li>
-            <li><strong>Radar Reflectors:</strong> Performance assessment and panel-type reflector design for small leisure and naval vessels.</li>
-            <li><strong>Concept Stage RCS Estimation:</strong> DB-based software modules for early naval design stages (K576 Smart Battleship, Corvette, Submarine).</li>
-          </ul>
+      <article class="ph ph-2">
+        <div class="ph-text">
+          <div class="ph-head"><span class="ph-num">03</span><span class="ph-label">Thrust 3 · Phase 2 Expansion</span></div>
+          <h2 class="th-title">Naval survivability modelling and simulation</h2>
+          <p class="ph-ko" lang="ko">함정 생존성 M&S</p>
+          <p class="th-lead">How warships appear to radar, where a radar-homing missile is likely to hit, and whether design-stage simulations can be trusted.</p>
+          <ul class="th-focus"><li>Radar cross section estimation for concept design, and RCS reduction</li><li>Anti-ship missile hit-point estimation from scattering centres; vulnerability assessment</li><li>Verification and validation of M&amp;S for naval ship programmes; radar reflectors for small craft</li></ul>
+          <div class="tag-row"><span class="tag">RCS</span><span class="tag">hit-point tracker</span><span class="tag">V&amp;V</span><span class="tag">vulnerability</span></div>
         </div>
-        <div>
-          <div class="placeholder" role="img" aria-label="RCS Simulation & Missile Hit Location Algorithm (figure in preparation)">Figure in preparation</div>
-        </div>
+        <div class="ph-media"><a class="ph-tile ph-plot ph-hero" href="images/trajectory/p2-hit-dist.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p2-hit-dist.jpg" alt="Missile hit-point distribution on a surface ship" loading="lazy"><span class="ph-cap">Missile hit-point distribution on a surface ship</span></a><a class="ph-tile ph-plot ph-tall" href="images/trajectory/p2-hpt.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p2-hpt.jpg" alt="Hit-point tracker architecture" loading="lazy"><span class="ph-cap">Hit-point tracker architecture</span></a></div>
+      </article>
+      <div class="th-out ph-2">
+        <div><h3>Selected papers <span data-thrust-count="papers:survivability"></span></h3><ol class="th-list" data-thrust-papers="survivability" data-limit="4"></ol></div>
+        <div><h3>Projects <span data-thrust-count="projects:survivability"></span></h3><ul class="th-list" data-thrust-projects="survivability" data-limit="4"></ul></div>
       </div>
     </div>
   </section>
 
-  <!-- Pillar 4: AI Structural Engineering -->
-  <section class="section section-tint" id="ai">
+  <section class="section section-tint th" id="ai-twin">
     <div class="wrap">
-      <div class="grid-2" style="align-items: center; gap: 3rem;">
-        <div>
-          <div class="placeholder" role="img" aria-label="AI PINN Submarine Optimization (figure in preparation)">Figure in preparation</div>
+      <article class="ph ph-3 ph-flip">
+        <div class="ph-text">
+          <div class="ph-head"><span class="ph-num">04</span><span class="ph-label">Thrust 4 · Phase 3 Future innovation</span></div>
+          <h2 class="th-title">Physics-informed AI and digital twins</h2>
+          <p class="ph-ko" lang="ko">물리정보 AI 및 디지털 트윈</p>
+          <p class="th-lead">How to make physics models fast enough to design with and to run alongside a real system, and how to keep the virtual and the real in sync.</p>
+          <ul class="th-focus"><li>Physics-informed and data-integrated neural networks for collapse strength and optimal design of stiffened cylinders and domes</li><li>AI-based structural health monitoring and sensing (IoT, vision) for offshore plants and pipelines</li><li>Digital-twin simulators with Unity and MuJoCo–ROS2 for remote control and monitoring of unmanned vessels</li></ul>
+          <div class="tag-row"><span class="tag">PINN</span><span class="tag">DNN</span><span class="tag">digital twin</span><span class="tag">Unity–ROS2</span><span class="tag">SHM</span></div>
         </div>
-        <div>
-          <span class="section-label">Pillar 4</span>
-          <h2>Physics-Informed AI & Structural Optimization</h2>
-          <p>
-            High-fidelity FE simulations can be computationally heavy. We integrate machine learning with physics laws (PINN/DNN) to build ultra-fast surrogate models for structural design optimization.
-          </p>
-          <ul style="padding-left: 1.25rem; color: var(--ink-soft); margin-bottom: 1.5rem;">
-            <li><strong>PINN Frameworks:</strong> Physics-Informed Neural Networks integrating design codes for stiffened cylinder design under hydrostatic pressure.</li>
-            <li><strong>Collapse Strength Prediction:</strong> Deep neural network models for rapid prediction of ultimate strength in submarine torispherical domes and hulls.</li>
-            <li><strong>Structural Health AI:</strong> Real-time SHM for e-methanol floating offshore platforms and high-temperature plant pipelines.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pillar 5: Digital Twin -->
-  <section class="section" id="digital-twin">
-    <div class="wrap">
-      <div class="grid-2" style="align-items: center; gap: 3rem;">
-        <div>
-          <span class="section-label">Pillar 5</span>
-          <h2>Digital Twin & Autonomous Unmanned Mobility</h2>
-          <p>
-            Creating real-time virtual representations of physical assets enables remote control, telemetry monitoring, and predictive maintenance for defense and commercial platforms.
-          </p>
-          <ul style="padding-left: 1.25rem; color: var(--ink-soft); margin-bottom: 1.5rem;">
-            <li><strong>Unity-ROS2 Virtual Framework:</strong> Digital twin system for remote-controlled unmanned surface vessels (USV) with obstacle avoidance.</li>
-            <li><strong>Virtual Remote Control:</strong> Remote control requirements and telemetry monitoring for naval unmanned systems.</li>
-            <li><strong>AIoT Leak Monitoring:</strong> IoT sensor data processing and machine learning for buried pipeline environmental corrosion monitoring.</li>
-          </ul>
-        </div>
-        <div>
-          <div class="placeholder" role="img" aria-label="Digital Twin & High-Speed Testing Rigs (figure in preparation)">Figure in preparation</div>
-        </div>
+        <div class="ph-media"><a class="ph-tile ph-photo ph-hero" href="images/trajectory/p3-mujoco.webp" target="_blank" rel="noopener"><picture><source srcset="images/trajectory/p3-mujoco.jpg" media="(prefers-reduced-motion: reduce)"><img src="images/trajectory/p3-mujoco.webp" alt="MuJoCo–ROS2 simulation (animation)" loading="lazy"></picture><span class="ph-cap">MuJoCo–ROS2 simulation</span></a><a class="ph-tile ph-plot" href="images/trajectory/p3-pinn.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p3-pinn.jpg" alt="PINN with physics-based loss terms" loading="lazy"><span class="ph-cap">PINN with physics-based loss terms</span></a><a class="ph-tile ph-plot" href="images/trajectory/p3-cylinder.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p3-cylinder.jpg" alt="Stiffened cylinder stress field" loading="lazy"><span class="ph-cap">Stiffened cylinder stress field</span></a><a class="ph-tile ph-plot" href="images/trajectory/p3-dt-system.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p3-dt-system.jpg" alt="Unity–ROS digital twin framework" loading="lazy"><span class="ph-cap">Unity–ROS digital twin framework</span></a><a class="ph-tile ph-photo ph-wide" href="images/trajectory/p3-usv-field.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p3-usv-field.jpg" alt="Unmanned boat field test" loading="lazy"><span class="ph-cap">Unmanned boat field test</span></a></div>
+      </article>
+      <div class="th-out ph-3">
+        <div><h3>Selected papers <span data-thrust-count="papers:ai-twin"></span></h3><ol class="th-list" data-thrust-papers="ai-twin" data-limit="4"></ol></div>
+        <div><h3>Projects <span data-thrust-count="projects:ai-twin"></span></h3><ul class="th-list" data-thrust-projects="ai-twin" data-limit="4"></ul></div>
       </div>
     </div>
   </section>
@@ -241,6 +208,8 @@
     </div>
   </footer>
 
+  <script src="data/publications.js"></script>
+  <script src="data/projects.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

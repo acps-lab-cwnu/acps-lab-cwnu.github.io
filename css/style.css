@@ -1022,6 +1022,31 @@ p { margin-top: 0; margin-bottom: 1rem; }
   .ph-media { grid-auto-rows: 7rem; }
 }
 
+/* Research thrusts (research.html) and compact phase cards (people.html) */
+.th .ph { align-items: start; }
+.ph-flip .ph-media { order: -1; }
+.th-title { margin: 0; font-size: 1.6rem; line-height: 1.25; text-wrap: balance; }
+.th-lead { margin: 0; color: var(--ink); line-height: 1.65; }
+.th-focus { margin: 0; padding-left: 1.1rem; color: var(--ink-soft); font-size: 0.9375rem; line-height: 1.6; display: flex; flex-direction: column; gap: 0.3rem; }
+.ph-tile.ph-tall { grid-row: span 2; }
+.th-out { margin-top: 2rem; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; padding-top: 1.5rem; border-top: 2px solid var(--ph); }
+.th-out h3 { margin: 0 0 0.75rem; font-size: 0.8125rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ph); }
+.th-out h3 span { color: var(--ink-faint); font-weight: 600; margin-left: 0.35rem; }
+.th-list { margin: 0; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.875rem; line-height: 1.5; color: var(--ink-soft); }
+.th-list .meta { display: block; color: var(--ink-faint); font-size: 0.8125rem; }
+.th-list .badge { margin-right: 0.35rem; }
+@media (max-width: 960px) { .ph-flip .ph-media { order: 0; } .th-out { grid-template-columns: minmax(0, 1fr); } }
+.pc-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+.pc { display: flex; flex-direction: column; background: var(--bg); border: 1px solid var(--rule); border-top: 4px solid var(--ph); border-radius: var(--radius); overflow: hidden; scroll-margin-top: calc(var(--nav-h) + 1rem); }
+.pc-fig .ph-tile { border: 0; border-radius: 0; height: 11rem; }
+.pc-fig .ph-cap { display: none; }
+.pc-body { padding: 1.1rem 1.25rem 1.25rem; display: flex; flex-direction: column; gap: 0.45rem; }
+.pc-body h3 { margin: 0; font-size: 1.05rem; line-height: 1.35; }
+.pc-body p { margin: 0; color: var(--ink-soft); font-size: 0.9rem; line-height: 1.55; }
+.pc-body .ph-ko { margin: 0; }
+.pc-links { display: flex; flex-wrap: wrap; gap: 0.35rem 1rem; margin-top: 0.35rem !important; font-weight: 600; font-size: 0.875rem !important; }
+@media (max-width: 960px) { .pc-list { grid-template-columns: minmax(0, 1fr); } }
+
 /* Lab logo */
 .brand-logo { height: 38px; width: auto; display: block; }
 .hero-logo { max-width: 300px; }
