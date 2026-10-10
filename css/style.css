@@ -1023,7 +1023,7 @@ p { margin-top: 0; margin-bottom: 1rem; }
 }
 
 /* Lab logo */
-.brand-logo { height: 38px; width: 38px; display: block; }
+.brand-logo { height: 38px; width: auto; display: block; }
 .hero-logo { max-width: 300px; }
 .hero-logo img { display: block; width: 100%; height: auto; }
 @media (max-width: 900px) { .hero-logo { max-width: 360px; } }
