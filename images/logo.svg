@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-24 0 548 330" role="img" aria-labelledby="t">
+  <title id="t">ACPS Lab — Applied Cyber-Physical Systems Laboratory</title>
+  <defs>
+    <!-- chunky letterforms: navy outline stroke under an orange core stroke -->
+    <g id="A"><path d="M0 110 L35 0 L70 110 M16 74 H54"/></g>
+    <g id="C"><path d="M66 20 A42 52 0 1 0 66 90"/></g>
+    <g id="P"><path d="M4 110 V2 H34 A29 29 0 0 1 34 60 H4"/></g>
+    <g id="S"><path d="M62 16 C48 -2 6 2 8 30 C10 56 62 50 64 80 C66 108 16 114 2 92"/></g>
+  </defs>
+
+  <!-- physical side: pressure-wave / radar arcs leaving the frame -->
+  <g fill="none" stroke="#0f4c81" stroke-width="12" stroke-linecap="round">
+    <path d="M70 120 A70 70 0 0 0 70 200"/>
+    <path d="M44 100 A100 100 0 0 0 44 220"/>
+    <path d="M18 82 A128 128 0 0 0 18 238"/>
+  </g>
+
+  <!-- cyber side: circuit traces with nodes -->
+  <g fill="none" stroke="#0f4c81" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M438 110 H470 V78"/>
+    <path d="M438 160 H500"/>
+    <path d="M438 210 H470 V242"/>
+  </g>
+  <g fill="#ef7d3c" stroke="#0f4c81" stroke-width="6">
+    <circle cx="470" cy="70" r="11"/>
+    <circle cx="502" cy="160" r="11"/>
+    <circle cx="470" cy="250" r="11"/>
+  </g>
+
+  <!-- frame -->
+  <rect x="84" y="56" width="354" height="208" rx="64" fill="#ffffff" stroke="#0f4c81" stroke-width="16"/>
+
+  <!-- ACPS, slightly bouncing like a wave -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke="#0f4c81" stroke-width="40">
+      <use href="#A" transform="translate(116 106) rotate(-6 35 55)"/>
+      <use href="#C" transform="translate(196 98) rotate(4 35 55)"/>
+      <use href="#P" transform="translate(276 106) rotate(-4 35 55)"/>
+      <use href="#S" transform="translate(348 98) rotate(6 35 55)"/>
+    </g>
+    <g stroke="#ef7d3c" stroke-width="24">
+      <use href="#A" transform="translate(116 106) rotate(-6 35 55)"/>
+      <use href="#C" transform="translate(196 98) rotate(4 35 55)"/>
+      <use href="#P" transform="translate(276 106) rotate(-4 35 55)"/>
+      <use href="#S" transform="translate(348 98) rotate(6 35 55)"/>
+    </g>
+  </g>
+
+  <!-- structure: stiffened-shell ribs along the frame base -->
+  <g stroke="#0f4c81" stroke-width="6" stroke-linecap="round">
+    <path d="M150 264 v14 M190 264 v14 M230 264 v14 M270 264 v14 M310 264 v14 M350 264 v14 M390 264 v14"/>
+  </g>
+
+  <text x="261" y="314" text-anchor="middle" fill="#0f4c81"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="3.2">APPLIED CYBER-PHYSICAL SYSTEMS LAB</text>
+</svg>
