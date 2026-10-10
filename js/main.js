@@ -33,15 +33,8 @@ function renderData() {
   if (news && window.NEWS) {
     const n = +news.dataset.limit || window.NEWS.length;
     const badge = { 'Faculty Award': 'award', 'Student Award': 'patent', 'Event': 'scie' };
-    news.innerHTML = window.NEWS.slice(0, n).map(x => `<li><span class="news-date">${esc(x.date)}</span> ${x.type ? `<span class="badge badge-${badge[x.type] || 'scie'}">${esc(x.type)}</span> ` : ''}${esc(x.text)}</li>`).join('');
+    news.innerHTML = window.NEWS.slice(0, n).map(x => `<li class="searchable-item" data-category="${esc((x.type || '').split(' ')[0].toLowerCase())}"><span class="news-date">${esc(x.date)}</span> ${x.type ? `<span class="badge badge-${badge[x.type] || 'scie'}">${esc(x.type)}</span> ` : ''}${esc(x.text)}</li>`).join('');
   }
-
-  // People page award lists reuse the same news entries
-  const N = window.NEWS || [];
-  [['faculty-awards', 'Faculty Award'], ['student-awards', 'Student Award']].forEach(([id, type]) => {
-    const ul = document.getElementById(id);
-    if (ul) ul.innerHTML = N.filter(x => x.type === type).map(x => `<li><strong>${esc(x.date)}:</strong> ${esc(x.text)}</li>`).join('');
-  });
 
   const featured = document.getElementById('featured-pubs');
   if (featured) featured.innerHTML = J.filter(p => p.featured).map(p => `<div class="card" style="padding:1.5rem;">
