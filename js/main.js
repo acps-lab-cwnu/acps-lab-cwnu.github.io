@@ -17,9 +17,9 @@ function pubItem(p) {
   </div>`;
 }
 
-function textList(title, items) {
+function textList(title, items, id) {
   if (!items.length) return '';
-  return `<div class="year-block"><h3 class="year-heading">${title} (${items.length})</h3>` +
+  return `<div class="year-block" id="${id}"><h3 class="year-heading">${title} (${items.length})</h3>` +
     items.map(t => `<div class="pub-item searchable-item"><div class="pub-authors">${boldMe(typeof t === 'string' ? t : t.text)}</div></div>`).join('') + '</div>';
 }
 
@@ -34,7 +34,7 @@ function renderData() {
   if (news && window.NEWS) {
     const n = +news.dataset.limit || window.NEWS.length;
     const badge = { 'Faculty Award': 'award', 'Student Award': 'patent', 'Event': 'scie' };
-    news.innerHTML = window.NEWS.slice(0, n).map(x => `<li class="searchable-item" data-category="${esc((x.type || '').split(' ')[0].toLowerCase())}"><span class="news-date">${esc(x.date)}</span> ${x.type ? `<span class="badge badge-${badge[x.type] || 'scie'}">${esc(x.type)}</span> ` : ''}${esc(x.text)}</li>`).join('');
+    news.innerHTML = window.NEWS.slice(0, n).map(x => `<li class="searchable-item" data-category="${esc((x.type || '').split(' ')[0].toLowerCase())}"><span class="news-date">${esc(x.date)}</span> <span class="news-type">${x.type ? `<span class="badge badge-${badge[x.type] || 'scie'}">${esc(x.type)}</span>` : ''}</span><span class="news-text">${esc(x.text)}</span></li>`).join('');
   }
 
   // Research page: papers and projects per thrust tag
@@ -57,23 +57,26 @@ function renderData() {
 
   const featured = document.getElementById('featured-pubs');
   if (featured) featured.innerHTML = J.filter(p => p.featured).map(p => `<div class="card" style="padding:1.5rem;">
-      <span class="badge badge-scie" style="margin-bottom:.75rem;">${esc(p.venue)} (${p.year})</span>
+      <span class="badge badge-scie" style="margin-bottom:.75rem;align-self:flex-start;">${esc(p.venue)} (${p.year})</span>
       <h4 style="margin-bottom:.5rem;line-height:1.4;"><a href="https://doi.org/${esc(p.doi)}" target="_blank" rel="noopener">${esc(p.title)}</a></h4>
       <p style="font-size:.875rem;color:var(--ink-soft);margin:0;">${boldMe(p.authors)}</p></div>`).join('');
 
   const pubs = document.getElementById('pub-list');
   if (pubs && P) {
     const years = [...new Set(J.map(p => p.year))].sort((a, b) => b - a);
-    pubs.innerHTML = '<h2>Journal Papers</h2>' + years.map(y => {
+    const jump = [['journal', 'Journal papers', J.length], ['conf-int', 'International conferences', P.conference_international.length], ['conf-dom', 'Domestic conferences', P.conference_domestic.length],
+      ['patents', 'Patents', P.patents.length], ['transfers', 'Technology transfers', P.transfers.length], ['books', 'Books', P.books.length]];
+    pubs.innerHTML = '<nav class="jump" aria-label="Publication types">' + jump.map(([id, t, n]) => `<a href="#${id}">${t} <span>${n}</span></a>`).join('') + '</nav>' +
+      '<h2 id="journal">Journal Papers</h2>' + years.map(y => {
       const list = J.filter(p => p.year === y);
       return `<div class="year-block"><h3 class="year-heading">${y} (${list.length})</h3>${list.map(pubItem).join('')}</div>`;
     }).join('') +
       '<h2 style="margin-top:3rem;">Conferences, Patents &amp; Books</h2>' +
-      textList('International Conferences', P.conference_international) +
-      textList('Domestic Conferences', P.conference_domestic) +
-      textList('Patent Applications', P.patents) +
-      textList('Technology Transfers', P.transfers) +
-      textList('Books', P.books);
+      textList('International Conferences', P.conference_international, 'conf-int') +
+      textList('Domestic Conferences', P.conference_domestic, 'conf-dom') +
+      textList('Patent Applications', P.patents, 'patents') +
+      textList('Technology Transfers', P.transfers, 'transfers') +
+      textList('Books', P.books, 'books');
   }
 
   const proj = document.getElementById('project-list');
