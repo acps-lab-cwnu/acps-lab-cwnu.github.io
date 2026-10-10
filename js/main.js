@@ -31,7 +31,8 @@ function renderData() {
   const news = document.getElementById('news-list');
   if (news && window.NEWS) {
     const n = +news.dataset.limit || window.NEWS.length;
-    news.innerHTML = window.NEWS.slice(0, n).map(x => `<li><span class="news-date">${esc(x.date)}</span> ${esc(x.text)}</li>`).join('');
+    const badge = { 'Faculty Award': 'award', 'Student Award': 'patent', 'Event': 'scie' };
+    news.innerHTML = window.NEWS.slice(0, n).map(x => `<li><span class="news-date">${esc(x.date)}</span> ${x.type ? `<span class="badge badge-${badge[x.type] || 'scie'}">${esc(x.type)}</span> ` : ''}${esc(x.text)}</li>`).join('');
   }
 
   const featured = document.getElementById('featured-pubs');

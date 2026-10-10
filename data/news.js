@@ -1,8 +1,30 @@
-// 최근 소식. 새 소식은 맨 위에 추가하세요. 첫 페이지에는 위에서부터 5개만 표시됩니다.
+// 소식: 교수·학생 수상 중심. 새 소식은 맨 위에 추가하세요. type은 "Faculty Award" / "Student Award" / "Event" 중 하나. 첫 페이지에는 위에서부터 5개만 표시됩니다.
 window.NEWS = [
-  { "date": "2026.01", "text": "Prof. Park began serving as Board Director (Public Relations) of the Society of Naval Architects of Korea (SNAK) and Chair of its Platform Promotion Committee." },
-  { "date": "2025.12", "text": "Technology transfer: digital-twin-based real-time monitoring system for autonomous boats, licensed to NARU Co., Ltd." },
-  { "date": "2025.11", "text": "Prof. Park was appointed as a technical advisory member of the Naval Ship Program Department, Defense Acquisition Program Administration (DAPA)." },
-  { "date": "2025", "text": "Prof. Park received the SNAK Academic Paper Award and the Chief of Naval Operations Excellent Paper Award." },
-  { "date": "2025.07", "text": "Prof. Park was appointed Vice Director of the RISE Center at Tongmyong University." }
+  {"date": "2025", "type": "Faculty Award", "text": "논문상 (대한조선학회)"},
+  {"date": "2025", "type": "Student Award", "text": "자율운항보트 경진대회 지식재산창의설계상(지식재산처장상)"},
+  {"date": "2025", "type": "Faculty Award", "text": "표창패 (부산광역시 남구청장)"},
+  {"date": "2025", "type": "Student Award", "text": "2025년 해양플랜트 서비스산업 아이디어 경진대회 장려상, 해양수산부"},
+  {"date": "2025", "type": "Faculty Award", "text": "감사장 (해군참모총장)"},
+  {"date": "2025", "type": "Student Award", "text": "미래 함정 아이디어 공모전 우수상(한화오션 대표이사상) (대한민국 해군)"},
+  {"date": "2025", "type": "Faculty Award", "text": "우수논문상 (해군참모총장)"},
+  {"date": "2025", "type": "Student Award", "text": "창의적 종합 설계 경진대회 은상 (부경대학교)"},
+  {"date": "2025", "type": "Faculty Award", "text": "우수교직원상 (동명대학교 총장상)"},
+  {"date": "2025", "type": "Student Award", "text": "지역혁신 아이디어 경진대회 장려상 (대한전기학회)"},
+  {"date": "2025", "type": "Faculty Award", "text": "우수논문상 (한국CDE학회장)"},
+  {"date": "2024", "type": "Faculty Award", "text": "우수논문상 (해군참모총장)"},
+  {"date": "2024", "type": "Student Award", "text": "자율운항보트 경진대회 창의아이디어혁신상(특허청장상) (대한조선학회)"},
+  {"date": "2024", "type": "Student Award", "text": "해양플랜트 서비스산업 아이디어 경진대회 장려상 (해양수산부)"},
+  {"date": "2023", "type": "Student Award", "text": "해양플랜트 서비스산업 아이디어 경진대회 장려상 (해양수산부)"},
+  {"date": "2023", "type": "Student Award", "text": "미래 함정 아이디어 공모전 우수상(함정기술연구회장상) (대한민국 해군)"},
+  {"date": "2023", "type": "Student Award", "text": "부산 아이디어 & 발명 경진대회 최우수상 (동명대학교)"},
+  {"date": "2023", "type": "Student Award", "text": "울산 기발한 배 콘테스트 아이디어상 및 장려상 (울산조선해양축제추진위원회)"},
+  {"date": "2023", "type": "Student Award", "text": "자율운항보트 경진대회 장려상 (대한전기학회)"},
+  {"date": "2023", "type": "Student Award", "text": "지역혁신형 창업 아이디어 페스티벌 은상 및 인기상 (대한전기학회)"},
+  {"date": "2022", "type": "Student Award", "text": "자율운항보트 경진대회 설계/제작부문 입상 및 장려상 (대한조선학회)"},
+  {"date": "2022", "type": "Student Award", "text": "두잉 (Do-ing) 영상 공모전 장려상 (동명대학교)"},
+  {"date": "2022", "type": "Student Award", "text": "모형차 자율주행 경진대회 최우수상 (한동대학교SW중심대학)"},
+  {"date": "2021", "type": "Student Award", "text": "캡스톤디자인 경진대회 장려상 (한국트라이볼로지학회)"},
+  {"date": "2021", "type": "Student Award", "text": "자율운항보트 경진대회 장려상 (대한조선학회)"},
+  {"date": "2019", "type": "Faculty Award", "text": "우수논문상 최우수상(해양기술부분) (해양수산부장관)"},
+  {"date": "2015", "type": "Faculty Award", "text": "학생 우수논문 발표상(재료분야) (한국해양공학회장)"}
 ];
