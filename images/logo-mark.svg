@@ -1,53 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-24 40 548 250" role="img" aria-labelledby="t">
-  <title id="t">ACPS Lab — Applied Cyber-Physical Systems Laboratory</title>
-  <defs>
-    <!-- chunky letterforms: navy outline stroke under an orange core stroke -->
-    <g id="A"><path d="M0 110 L35 0 L70 110 M16 74 H54"/></g>
-    <g id="C"><path d="M66 20 A42 52 0 1 0 66 90"/></g>
-    <g id="P"><path d="M4 110 V2 H34 A29 29 0 0 1 34 60 H4"/></g>
-    <g id="S"><path d="M62 16 C48 -2 6 2 8 30 C10 56 62 50 64 80 C66 108 16 114 2 92"/></g>
-  </defs>
-
-  <!-- physical side: pressure-wave / radar arcs leaving the frame -->
-  <g fill="none" stroke="#0f4c81" stroke-width="12" stroke-linecap="round">
-    <path d="M70 120 A70 70 0 0 0 70 200"/>
-    <path d="M44 100 A100 100 0 0 0 44 220"/>
-    <path d="M18 82 A128 128 0 0 0 18 238"/>
-  </g>
-
-  <!-- cyber side: circuit traces with nodes -->
-  <g fill="none" stroke="#0f4c81" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M438 110 H470 V78"/>
-    <path d="M438 160 H500"/>
-    <path d="M438 210 H470 V242"/>
-  </g>
-  <g fill="#ef7d3c" stroke="#0f4c81" stroke-width="6">
-    <circle cx="470" cy="70" r="11"/>
-    <circle cx="502" cy="160" r="11"/>
-    <circle cx="470" cy="250" r="11"/>
-  </g>
-
-  <!-- frame -->
-  <rect x="84" y="56" width="354" height="208" rx="64" fill="#ffffff" stroke="#0f4c81" stroke-width="16"/>
-
-  <!-- ACPS, slightly bouncing like a wave -->
-  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <g stroke="#0f4c81" stroke-width="40">
-      <use href="#A" transform="translate(116 106) rotate(-6 35 55)"/>
-      <use href="#C" transform="translate(196 98) rotate(4 35 55)"/>
-      <use href="#P" transform="translate(276 106) rotate(-4 35 55)"/>
-      <use href="#S" transform="translate(348 98) rotate(6 35 55)"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="6 12 152 76" role="img" aria-labelledby="t">
+  <title id="t">ACPS Lab mark: a ring-stiffened cylinder, physical on the left and its digital twin feeding a neural network on the right</title>
+    <path d="M70 25 H20 A10 25 0 0 0 20 75 H70 Z" fill="#0f4c81"/>
+    <ellipse cx="20" cy="50" rx="10" ry="25" fill="#2d6aa3"/>
+    <g fill="none" stroke="#ffffff" stroke-opacity="0.5" stroke-width="2.4">
+      <path d="M36 25 A10 25 0 0 1 36 75"/><path d="M50 25 A10 25 0 0 1 50 75"/><path d="M64 25 A10 25 0 0 1 64 75"/>
     </g>
-    <g stroke="#ef7d3c" stroke-width="24">
-      <use href="#A" transform="translate(116 106) rotate(-6 35 55)"/>
-      <use href="#C" transform="translate(196 98) rotate(4 35 55)"/>
-      <use href="#P" transform="translate(276 106) rotate(-4 35 55)"/>
-      <use href="#S" transform="translate(348 98) rotate(6 35 55)"/>
+    <g fill="none" stroke="#0d9488" stroke-width="2.2" stroke-linejoin="round">
+      <path d="M70 25 H120 M70 75 H120 M70 41.7 H125 M70 58.3 H125"/>
+      <path d="M84 25 A10 25 0 0 1 84 75 M98 25 A10 25 0 0 1 98 75 M112 25 A10 25 0 0 1 112 75"/>
+      <ellipse cx="120" cy="50" rx="10" ry="25"/>
     </g>
-  </g>
-
-  <!-- structure: stiffened-shell ribs along the frame base -->
-  <g stroke="#0f4c81" stroke-width="6" stroke-linecap="round">
-    <path d="M150 264 v14 M190 264 v14 M230 264 v14 M270 264 v14 M310 264 v14 M350 264 v14 M390 264 v14"/>
-  </g>
+    <path d="M122 30 L150 33 M122 30 L150 67 M130 50 L150 33 M130 50 L150 67 M122 70 L150 33 M122 70 L150 67 " stroke="#0d9488" stroke-width="1.6" stroke-opacity="0.8"/>
+    <g fill="#ffffff" stroke="#0d9488" stroke-width="2"><circle cx="84" cy="25" r="2.6"/><circle cx="98" cy="25" r="2.6"/><circle cx="112" cy="25" r="2.6"/><circle cx="91" cy="41.7" r="2.6"/><circle cx="105" cy="41.7" r="2.6"/><circle cx="84" cy="58.3" r="2.6"/><circle cx="98" cy="58.3" r="2.6"/><circle cx="112" cy="58.3" r="2.6"/><circle cx="84" cy="75" r="2.6"/><circle cx="98" cy="75" r="2.6"/><circle cx="112" cy="75" r="2.6"/></g>
+    <g fill="#0d9488"><circle cx="122" cy="30" r="3.6"/><circle cx="130" cy="50" r="3.6"/><circle cx="122" cy="70" r="3.6"/><circle cx="150" cy="33" r="5"/><circle cx="150" cy="67" r="5"/></g>
+    <path d="M70 16 V84" stroke="#0f4c81" stroke-width="1.8" stroke-dasharray="3 3"/>
 </svg>
