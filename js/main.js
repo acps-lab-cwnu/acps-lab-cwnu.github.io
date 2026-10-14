@@ -25,7 +25,7 @@ function textList(title, items, id) {
 
 function renderData() {
   const P = window.PUBLICATIONS, J = P ? P.journal : [], PR = window.PROJECTS || [];
-  const counts = { journal: J.length, projects: PR.length, ongoing: PR.filter(isOngoing).length, transfers: P ? P.transfers.length : 0, patents: P ? P.patents.length : 0,
+  const counts = { journal: J.length, projects: PR.length, ongoing: PR.filter(isOngoing).length, completed: PR.filter(p => !isOngoing(p)).length, transfers: P ? P.transfers.length : 0, patents: P ? P.patents.length : 0,
     conferences: P ? P.conference_international.length + P.conference_domestic.length : 0,
     'student-awards': (window.NEWS || []).filter(x => x.type === 'Student Award').length };
   document.querySelectorAll('[data-count]').forEach(el => { el.textContent = counts[el.dataset.count] ?? ''; });
@@ -187,6 +187,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 6. Category Filter Logic
+  // a filter that would show nothing (e.g. no Events yet) is hidden
+  document.querySelectorAll('.filter-btn').forEach(b => {
+    const c = b.dataset.filter;
+    if (c !== 'all' && !document.querySelector('[data-category*="' + c + '"]')) b.hidden = true;
+  });
   const filterBtns = document.querySelectorAll('.filter-btn');
   const filterItems = document.querySelectorAll('[data-category]');
 

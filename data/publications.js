@@ -23,7 +23,7 @@ window.PUBLICATIONS = {
     {
       "year": 2026,
       "authors": "Kim J, Lee S, Cho DS, Park SJ, Kim K, Shin Y",
-      "title": "Enhancement of the Computational Performance for Near-and Far-Field Target Strength Analysis Using OptiX-based Shooting and Bouncing Rays Method",
+      "title": "Enhancement of the Computational Performance for Near- and Far-Field Target Strength Analysis Using OptiX-based Shooting and Bouncing Rays Method",
       "venue": "International Journal of Naval Architecture and Ocean Engineering",
       "index": "SCIE",
       "doi": "10.1016/j.ijnaoe.2026.100778",
@@ -422,7 +422,7 @@ window.PUBLICATIONS = {
   "conference_international": [
     {
       "year": 2025,
-      "text": "Kim SJ, Jeong SJ, Park SJ. Hydrodynamic Performance Assessment Of Long-Line Oyster Farming Systems. 44th International Conference on Ocean, Offshore and Arctic Engineering (OMAE 2025), Vancouver, Korea, June 22-27, 2025."
+      "text": "Kim SJ, Jeong SJ, Park SJ. Hydrodynamic Performance Assessment Of Long-Line Oyster Farming Systems. 44th International Conference on Ocean, Offshore and Arctic Engineering (OMAE 2025), Vancouver, Canada, June 22-27, 2025."
     },
     {
       "year": 2022,
@@ -500,19 +500,19 @@ window.PUBLICATIONS = {
     },
     {
       "year": 2025,
-      "text": "Jeong CL, Kim K, Park SJ, Kim EY, Park B. Study on Estimation of Radar-Homing Anti-Ship Missile Flight Paths Based on Equivalent Scattering Center of Naval Ship. Winter Conference of Society for Computational Design and Engineering(CDE), Gangwon, Korea, February 19-22, 2025."
+      "text": "Jeong CL, Kim K, Park SJ, Kim EY, Park B. Study on Estimation of Radar-Homing Anti-Ship Missile Flight Paths Based on Equivalent Scattering Center of Naval Ship. Winter Conference of Society for Computational Design and Engineering (CDE), Gangwon, Korea, February 19-22, 2025."
     },
     {
       "year": 2024,
-      "text": "Cho DS, Kim KH, Song KJ, Shin YH, Park SJ. Research on Target Strength Reduction Technologies for Advanced Stealth Submarines. Proceedings of the Annual Autumn Conference(SNAK), Changwon, Korea, November 14–15, 2024."
+      "text": "Cho DS, Kim KH, Song KJ, Shin YH, Park SJ. Research on Target Strength Reduction Technologies for Advanced Stealth Submarines. Proceedings of the Annual Autumn Conference (SNAK), Changwon, Korea, November 14–15, 2024."
     },
     {
       "year": 2024,
-      "text": "Jeong CL, Park SJ, Kim K. A Study on Reliability Improvement of Electric Motors for E-mobility. Proceedings of the Annual Autumn Conference(SNAK), Changwon, Korea, November 14–15, 2024."
+      "text": "Jeong CL, Park SJ, Kim K. A Study on Reliability Improvement of Electric Motors for E-mobility. Proceedings of the Annual Autumn Conference (SNAK), Changwon, Korea, November 14–15, 2024."
     },
     {
       "year": 2024,
-      "text": "Lee JY, Kim K, Park SJ, Cho DS. Numerical analysis on insertion loss tendency of air bubble layer beneath wetted surface of stiffened plate. Proceedings of the Annual Autumn Conference(SNAK), Changwon, Korea, November 14–15, 2024."
+      "text": "Lee JY, Kim K, Park SJ, Cho DS. Numerical analysis on insertion loss tendency of air bubble layer beneath wetted surface of stiffened plate. Proceedings of the Annual Autumn Conference (SNAK), Changwon, Korea, November 14–15, 2024."
     },
     {
       "year": 2024,
@@ -524,7 +524,7 @@ window.PUBLICATIONS = {
     },
     {
       "year": 2024,
-      "text": "Hong SC, Ceong CL, Park SJ, Kim K. Comparison of the output characteristics of six-phase synchronous reluctance motor according to the variation of winding configuration and rotor shape parameter. Proceedings of The Korean Institute of Electrical Engineers, Korea, July 10–13, 2024."
+      "text": "Hong SC, Jeong CL, Park SJ, Kim K. Comparison of the output characteristics of six-phase synchronous reluctance motor according to the variation of winding configuration and rotor shape parameter. Proceedings of The Korean Institute of Electrical Engineers, Korea, July 10–13, 2024."
     },
     {
       "year": 2024,

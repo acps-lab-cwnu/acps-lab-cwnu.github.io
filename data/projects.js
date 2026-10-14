@@ -464,7 +464,7 @@ window.PROJECTS = [
     "role": "학생연구원",
     "start": "2018.12",
     "end": "2019.12",
-    "task": "유한요소해석: 종강도 및 송상 평가",
+    "task": "유한요소해석: 종강도 및 손상 평가",
     "sponsor": "SNAK",
     "thrust": "structures"
   },
