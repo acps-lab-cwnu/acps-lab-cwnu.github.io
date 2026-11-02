@@ -1,4 +1,4 @@
-// thrust: structures | acoustics | survivability | ai-twin ("" = none). 연구과제 목록. 새 과제는 맨 위에 추가. 진행중/완료는 end(YYYY.MM) 기준으로 자동 표시됩니다.
+// thrust: structures | acoustics | ai-twin ("" = none). 연구과제 목록. 새 과제는 맨 위에 추가. 진행중/완료는 end(YYYY.MM) 기준으로 자동 표시됩니다.
 window.PROJECTS = [
   {
     "title": "메타 물질을 이용한 수중함의 음향 표적 강도 저감 기술개발",
@@ -82,7 +82,7 @@ window.PROJECTS = [
     "thrust": "structures"
   },
   {
-    "title": "K576 스마트배틀십 특수성능(URN) 향상방안 위탁연구",
+    "title": "K576 스마트 배틀십 특수성능(URN) 향상방안 위탁연구",
     "role": "연구책임자",
     "start": "2025.11",
     "end": "2026.06",
@@ -97,19 +97,19 @@ window.PROJECTS = [
     "end": "2026.06",
     "task": "RCS 해석",
     "sponsor": "한화오션",
-    "thrust": "survivability"
+    "thrust": "acoustics"
   },
   {
     "title": "잠수함 추진기 구조안전성 및 유체력 기인 추진기 구조진동소음 수치해석 연구",
     "role": "연구책임자",
     "start": "2024.09",
     "end": "2026.05",
-    "task": "추진기 구조 강도, 피로, 및 진동 해석",
+    "task": "추진기 구조 강도, 피로 및 진동 해석",
     "sponsor": "KRISO",
     "thrust": "acoustics"
   },
   {
-    "title": "스마트 해양레포츠 e모빌리티 현장 실증 용역",
+    "title": "스마트 해양레포츠 e-모빌리티 현장 실증 용역",
     "role": "연구책임자",
     "start": "2025.12",
     "end": "2026.05",
@@ -122,7 +122,7 @@ window.PROJECTS = [
     "role": "연구책임자",
     "start": "2024.07",
     "end": "2026.01",
-    "task": "추진기 구조 강도, 피로, 및 진동 해석",
+    "task": "추진기 구조 강도, 피로 및 진동 해석",
     "sponsor": "KRISO",
     "thrust": "structures"
   },
@@ -133,7 +133,7 @@ window.PROJECTS = [
     "end": "2025.12",
     "task": "DB구축 및 신뢰성검증",
     "sponsor": "한화오션",
-    "thrust": "survivability"
+    "thrust": "acoustics"
   },
   {
     "title": "함정 RCS 신호 기반 피격 위치 산출 모듈 개발",
@@ -142,7 +142,7 @@ window.PROJECTS = [
     "end": "2025.12",
     "task": "RCS 신호 해석",
     "sponsor": "KIMM",
-    "thrust": "survivability"
+    "thrust": "acoustics"
   },
   {
     "title": "‘장보고-Ⅳ 개념설계’의 음향표적강도 검토",
@@ -154,13 +154,13 @@ window.PROJECTS = [
     "thrust": "acoustics"
   },
   {
-    "title": "해양레포츠용 소형 모빌리티 안전운항을 위한 패널형 레이더리플렉터 개발 연구",
+    "title": "해양레포츠용 소형 모빌리티 안전운항을 위한 패널형 레이더 리플렉터 개발 연구",
     "role": "참여연구원",
     "start": "2025.04",
     "end": "2025.10",
     "task": "RCS 신호 해석",
     "sponsor": "RIMS",
-    "thrust": "survivability"
+    "thrust": "acoustics"
   },
   {
     "title": "잠수함 모듈화 설계 적용에 따른 함 성능 영향성 연구",
@@ -176,7 +176,7 @@ window.PROJECTS = [
     "role": "참여연구원",
     "start": "2025.07",
     "end": "2025.11",
-    "task": "자료조사 및 경진대회 운영",
+    "task": "자료 조사 및 경진대회 운영",
     "sponsor": "대한민국 해군",
     "thrust": ""
   },
@@ -196,7 +196,7 @@ window.PROJECTS = [
     "end": "2025.03",
     "task": "알고리즘 개발/검증",
     "sponsor": "(주)크리에이텍",
-    "thrust": "survivability"
+    "thrust": "acoustics"
   },
   {
     "title": "수소파이프라인의 안전성 평가를 위한 구조 거동 예측 연구",
@@ -241,7 +241,7 @@ window.PROJECTS = [
     "end": "2024.12",
     "task": "기술 조사",
     "sponsor": "한화오션",
-    "thrust": "survivability"
+    "thrust": "acoustics"
   },
   {
     "title": "함정 RCS 신호 기반 피격 위치 추정 알고리즘 개발",
@@ -250,7 +250,7 @@ window.PROJECTS = [
     "end": "2024.12",
     "task": "RCS (Radar Cross Section) 소프트웨어 개발/검증",
     "sponsor": "KIMM",
-    "thrust": "survivability"
+    "thrust": "acoustics"
   },
   {
     "title": "대학혁신연구단지 조성사업단(I-URP)",
@@ -262,7 +262,7 @@ window.PROJECTS = [
     "thrust": ""
   },
   {
-    "title": "(‘24-3차) 개념설계 기술지원 연구용역 수중방사소음 및 표적강도 위탁연구",
+    "title": "('24-3차) 개념설계 기술지원 연구용역 수중방사소음 및 표적강도 위탁연구",
     "role": "참여연구원",
     "start": "2024.06",
     "end": "2024.11",
@@ -271,7 +271,7 @@ window.PROJECTS = [
     "thrust": "acoustics"
   },
   {
-    "title": "(‘24-4차) 개념설계 기술지원 연구용역 사업 수중방사소음 위탁연구",
+    "title": "('24-4차) 개념설계 기술지원 연구용역 사업 수중방사소음 위탁연구",
     "role": "참여연구원",
     "start": "2024.06",
     "end": "2024.11",
@@ -304,16 +304,16 @@ window.PROJECTS = [
     "end": "2024.03",
     "task": "M&S 결과 검토",
     "sponsor": "HD현대중공업",
-    "thrust": "survivability"
+    "thrust": "acoustics"
   },
   {
-    "title": "KDX-Ⅲ Batch-Ⅱ(정조대왕함) 체계개발단계의 “M&S 결과에 대한 검증\" 위탁연구",
+    "title": "KDX-Ⅲ Batch-Ⅱ(정조대왕함) 체계개발단계의 “M&S 결과에 대한 검증” 위탁연구",
     "role": "참여연구원",
     "start": "2023.10",
     "end": "2024.03",
     "task": "M&S 결과 검토",
     "sponsor": "HD현대중공업",
-    "thrust": "survivability"
+    "thrust": "acoustics"
   },
   {
     "title": "대함미사일에 의한 수상함 피격점 산정(60m Class Corvette)",
@@ -322,7 +322,7 @@ window.PROJECTS = [
     "end": "2024.03",
     "task": "피격점 산정",
     "sponsor": "(주)크리에이텍",
-    "thrust": "survivability"
+    "thrust": "acoustics"
   },
   {
     "title": "ROS GAZEBO 기반 UAV-USV 간 이종협응제어 가상환경 구축",
@@ -430,14 +430,14 @@ window.PROJECTS = [
     "end": "2022.08",
     "task": "기술 조사",
     "sponsor": "HJ중공업/KIMM",
-    "thrust": "survivability"
+    "thrust": "acoustics"
   },
   {
     "title": "디지털 트윈 기반 고온 플랜트 배관 스마트 모니터링 시스템",
     "role": "연구책임자",
     "start": "2021.06",
     "end": "2022.11",
-    "task": "구조 건전성 모니터링(Structural Health monitoring)",
+    "task": "구조 건전성 모니터링(Structural Health Monitoring)",
     "sponsor": "BISTEP",
     "thrust": "ai-twin"
   },
@@ -491,8 +491,8 @@ window.PROJECTS = [
     "role": "학생연구원",
     "start": "2017.01",
     "end": "2019.11",
-    "task": "소성 및 파단 모델 개발: A, AH36, DH36, EH36, JIS G3131 SPHC 강재",
-    "sponsor": "상용유한요소해석프로그램(Abaqus) 사용자 서브루틴 개발용접 보강판 파단 실험 및 수치해석KRISO",
+    "task": "소성 및 파단 모델 개발: A, AH36, DH36, EH36, JIS G3131 SPHC 강재, 상용유한요소해석프로그램(Abaqus) 사용자 서브루틴 개발, 용접 보강판 파단 실험 및 수치해석",
+    "sponsor": "KRISO",
     "thrust": "structures"
   },
   {
@@ -536,7 +536,7 @@ window.PROJECTS = [
     "role": "학생연구원",
     "start": "2012.07",
     "end": "2018.12",
-    "task": "EuroCod3 기반 매니폴드 설계 및 수치해석 검증",
+    "task": "Eurocode 3 기반 매니폴드 설계 및 수치해석 검증",
     "sponsor": "MOTIE",
     "thrust": "structures"
   }

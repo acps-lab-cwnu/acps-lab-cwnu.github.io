@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects — ACPS Lab | Changwon National University</title>
   <meta name="description" content="Complete listing of national, defense, and industrial research projects led or participated in by Prof. Sung-Ju Park.">
-  <link rel="stylesheet" href="css/style.css?v=20261015a">
+  <link rel="stylesheet" href="css/style.css?v=20261102a">
   <!-- Link previews (KakaoTalk, Slack, social media) -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ACPS Lab">
   <meta property="og:title" content="Projects — ACPS Lab | Changwon National University">
   <meta property="og:description" content="Complete listing of national, defense, and industrial research projects led or participated in by Prof. Sung-Ju Park.">
   <meta property="og:url" content="https://acps-lab-cwnu.github.io/projects.html">
+  <link rel="canonical" href="https://acps-lab-cwnu.github.io/projects.html">
   <meta property="og:image" content="https://acps-lab-cwnu.github.io/images/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -29,17 +30,17 @@
     <div class="site-head-inner">
       <a class="brand" href="index.html">
         <picture><source srcset="images/logo-mark-dark.svg" media="(prefers-color-scheme: dark)"><img class="brand-logo" src="images/logo-mark.svg" alt="ACPS Lab" width="33" height="38"></picture>
-        <span class="brand-text">Applied Cyber-Physical Systems Lab</span>
+        <span class="brand-text">Applied Cyber-Physical Systems Lab</span><span class="brand-short">ACPS Lab</span>
       </a>
-      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
-      <nav class="site-nav" aria-label="Main Navigation">
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="people.html">People</a>
         <a href="research.html">Research</a>
         <a href="projects.html">Projects</a>
         <a href="publications.html">Publications</a>
         <a href="news.html">News</a>
-        <a href="contact.html">Join Us</a>
+        <a href="contact.html">Join Us &amp; Contact</a>
       </nav>
     </div>
   </header>
@@ -48,9 +49,10 @@
   <section style="background: var(--bg-soft); padding: 3rem 0; border-bottom: 1px solid var(--rule);">
     <div class="wrap">
       <span class="section-label">Grants & Industry Contracts</span>
-      <h1>Research Projects &amp; Grants (<span data-count="projects"></span>)</h1>
+      <h1>Research Projects &amp; Grants</h1>
+      <p class="count-line"><strong><span data-count="pi"></span></strong> as principal investigator &middot; <strong><span data-count="projects"></span></strong> in total including participation</p>
       <p style="color: var(--ink-soft); max-width: var(--measure); margin-bottom: 0;">
-        Funded by Defense Acquisition Program Administration (DAPA), Republic of Korea Navy, Hanwha Ocean, HD Hyundai Heavy Industries, KRISO, NRF, KIMST, NIFS, and local government bodies.
+        Funded by the Korea Research Institute for Defense Technology Planning and Advancement (KRIT, under DAPA), Republic of Korea Navy, Hanwha Ocean, HD Hyundai Heavy Industries, KRISO, NRF, KIMST, NIFS, and local government bodies.
       </p>
     </div>
   </section>
@@ -64,14 +66,19 @@
         <button class="filter-btn active" data-filter="all">All Projects (<span data-count="projects"></span>)</button>
         <button class="filter-btn" data-filter="ongoing">Ongoing (<span data-count="ongoing"></span>)</button>
         <button class="filter-btn" data-filter="completed">Completed (<span data-count="completed"></span>)</button>
+        <button class="filter-btn" data-filter="pi">As PI (<span data-count="pi"></span>)</button>
 
         <div class="search-box">
-          <input type="text" class="search-input" placeholder="Search projects by title, sponsor, PI...">
+          <label class="sr-only" for="project-search">Search projects</label>
+          <input type="search" id="project-search" class="search-input" placeholder="Search by title, sponsor or role...">
         </div>
       </div>
 
       <!-- Project Cards -->
+      <h2 class="sr-only">Project list</h2>
+      <div class="thrust-note" id="thrust-note" hidden></div>
       <div class="project-list" id="project-list"></div>
+      <p class="no-results" hidden>No matching projects.</p>
     </div>
   </section>
 
@@ -80,11 +87,12 @@
     <div class="wrap">
       <div class="foot-inner">
         <div class="foot-brand">
-          <h3>Applied Cyber-Physical Systems Laboratory (ACPS Lab)</h3>
+          <p class="foot-title">Applied Cyber-Physical Systems Laboratory (ACPS Lab)</p>
           <p>Department of Artificial Intelligence &amp; Defense Engineering<br>Changwon National University, Changwon, Republic of Korea</p>
+          <p class="foot-contact"><a href="mailto:parksj0314@tu.ac.kr">parksj0314@tu.ac.kr</a> · <a href="contact.html">Contact &amp; location</a></p>
         </div>
         <div class="foot-links">
-          <h4>Navigation</h4>
+          <p class="foot-subtitle">Navigation</p>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="people.html">People</a></li>
@@ -102,7 +110,7 @@
     </div>
   </footer>
 
-  <script src="data/projects.js?v=20261015a"></script>
-  <script src="js/main.js?v=20261015a"></script>
+  <script src="data/projects.js?v=20261102a"></script>
+  <script src="js/main.js?v=20261102a"></script>
 </body>
 </html>

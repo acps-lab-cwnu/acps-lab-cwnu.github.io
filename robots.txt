@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /참고자료/
+
+Sitemap: https://acps-lab-cwnu.github.io/sitemap.xml

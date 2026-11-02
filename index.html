@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Applied Cyber-Physical Systems Laboratory (ACPS Lab) | Changwon National University</title>
-  <meta name="description" content="Applied Cyber-Physical Systems Laboratory (ACPS Lab) led by Prof. Sung-Ju Park at Changwon National University. Applied research that couples physical testing, simulation and physics-informed AI into digital twins for marine and mechanical engineering systems.">
-  <link rel="stylesheet" href="css/style.css?v=20261015a">
+  <meta name="description" content="국립창원대학교 인공지능디펜스공학과 박성주 교수 연구실(ACPS Lab). Applied Cyber-Physical Systems Laboratory led by Prof. Sung-Ju Park, Changwon National University. Applied research that couples physical testing, simulation and physics-informed AI into digital twins for marine and mechanical engineering systems.">
+  <link rel="stylesheet" href="css/style.css?v=20261102a">
   <!-- Link previews (KakaoTalk, Slack, social media) -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ACPS Lab">
   <meta property="og:title" content="ACPS Lab · 응용 사이버물리시스템 연구실">
-  <meta property="og:description" content="국립창원대학교 인공지능디펜스공학과 박성주 교수 연구실 · Structural integrity, underwater acoustics, naval survivability, physics-informed AI and digital twins.">
+  <meta property="og:description" content="국립창원대학교 인공지능디펜스공학과 박성주 교수 연구실 · Structural integrity, underwater acoustics, signature control, physics-informed AI and digital twins.">
   <meta property="og:url" content="https://acps-lab-cwnu.github.io/">
+  <link rel="canonical" href="https://acps-lab-cwnu.github.io/">
   <meta property="og:image" content="https://acps-lab-cwnu.github.io/images/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,7 +42,7 @@
           "Structural Health Monitoring",
           "Ductile Fracture Mechanics",
           "Underwater Radiated Noise",
-          "Radar Cross Section",
+          "Acoustic Target Strength",
           "Physics-Informed Neural Networks",
           "Digital Twin Unmanned Systems"
         ]
@@ -58,8 +59,10 @@
         ],
         "worksFor": {
           "@type": "CollegeOrUniversity",
-          "name": "Changwon National University"
-        }
+          "name": "Changwon National University",
+          "url": "https://www.changwon.ac.kr"
+        },
+        "description": "Assistant Professor, Department of Artificial Intelligence & Defense Engineering, Changwon National University."
       }
     ]
   }
@@ -72,17 +75,17 @@
     <div class="site-head-inner">
       <a class="brand" href="index.html">
         <picture><source srcset="images/logo-mark-dark.svg" media="(prefers-color-scheme: dark)"><img class="brand-logo" src="images/logo-mark.svg" alt="ACPS Lab" width="33" height="38"></picture>
-        <span class="brand-text">Applied Cyber-Physical Systems Lab</span>
+        <span class="brand-text">Applied Cyber-Physical Systems Lab</span><span class="brand-short">ACPS Lab</span>
       </a>
-      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
-      <nav class="site-nav" aria-label="Main Navigation">
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="people.html">People</a>
         <a href="research.html">Research</a>
         <a href="projects.html">Projects</a>
         <a href="publications.html">Publications</a>
         <a href="news.html">News</a>
-        <a href="contact.html">Join Us</a>
+        <a href="contact.html">Join Us &amp; Contact</a>
       </nav>
     </div>
   </header>
@@ -110,7 +113,7 @@
   <section class="section section-tint" style="padding: 2rem 0;">
     <div class="wrap">
       <div class="stats-grid">
-        <a class="stat-card" href="projects.html"><div class="stat-val" data-count="ongoing"></div><div class="stat-lbl">Current Projects</div></a>
+        <a class="stat-card" href="projects.html"><div class="stat-val" data-count="ongoing"></div><div class="stat-lbl">Ongoing Projects</div></a>
         <a class="stat-card" href="publications.html"><div class="stat-val" data-count="journal"></div><div class="stat-lbl">Journal Papers</div></a>
         <a class="stat-card" href="publications.html"><div class="stat-val" data-count="conferences"></div><div class="stat-lbl">Conference Papers</div></a>
         <a class="stat-card" href="publications.html"><div class="stat-val" data-count="transfers"></div><div class="stat-lbl">Technology Transfers</div></a>
@@ -131,14 +134,14 @@
             experiments define the physics, simulation and physics-informed AI make it fast enough to use, and digital twins put it to work in the field.
           </p>
           <p style="color: var(--ink-soft); line-height: 1.75; margin-bottom: 0;">
-            <strong>Applied</strong> means our results leave the lab: <span data-count="projects"></span> funded projects with industry, research institutes and government,
+            <strong>Applied</strong> means our results leave the lab: <span data-count="pi"></span> funded projects led as principal investigator (<span data-count="projects"></span> including participation) with industry, research institutes and government,
             <span data-count="transfers"></span> technology transfers and <span data-count="patents"></span> patent applications.
           </p>
         </div>
         <div class="lab-statement-box" style="margin: 0;">
           <div class="lab-statement-title">How the work connects</div>
           <p><strong>Sense.</strong> Material tests, water-tank acoustics and field sensors capture what the physical system actually does.</p>
-          <p><strong>Model.</strong> Finite element, acoustic and electromagnetic simulations turn those data into validated physics models.</p>
+          <p><strong>Model.</strong> Finite element, structural-acoustic and ray-tracing simulations turn those data into validated physics models.</p>
           <p><strong>Learn.</strong> Physics-informed neural networks compress the models into surrogates fast enough for design decisions.</p>
           <p style="margin-bottom: 0;"><strong>Twin.</strong> Digital twins close the loop, feeding live data back to monitor, control and operate marine systems.</p>
         </div>
@@ -149,37 +152,31 @@
   <!-- Research thrusts -->
   <section class="section section-tint">
     <div class="wrap">
-      <div class="section-head" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 1rem;">
+      <div class="section-head section-head--row">
         <div>
           <span class="section-label">Research thrusts</span>
-          <h2>Four research thrusts, one loop</h2>
+          <h2>Three research thrusts, one loop</h2>
         </div>
-        <a href="research.html" class="btn btn-ghost" style="font-size: 0.875rem;">All research &rarr;</a>
+        <a href="research.html" class="btn btn-ghost btn-sm">All research &rarr;</a>
       </div>
-      <div class="grid-2">
+      <div class="pc-list">
         <a class="card thrust-card" href="research.html#structures">
           <span class="thrust-num">01</span>
           <h3>Structural integrity under extreme conditions</h3>
           <p lang="ko">극한 환경 구조 건전성 평가</p>
-          <div class="tag-row"><span class="tag">Hosford–Coulomb</span><span class="tag">VUMAT</span><span class="tag">cryogenic</span><span class="tag">hydrogen embrittlement</span></div>
+          <div class="tag-row"><span class="tag">ductile fracture</span><span class="tag">nonlinear FEA</span><span class="tag">cryogenic</span><span class="tag">hydrogen embrittlement</span></div>
         </a>
         <a class="card thrust-card" href="research.html#acoustics">
           <span class="thrust-num">02</span>
           <h3>Underwater acoustics and signature control</h3>
-          <p lang="ko">수중 음향 및 신호 제어</p>
-          <div class="tag-row"><span class="tag">URN</span><span class="tag">target strength</span><span class="tag">bubble layer</span><span class="tag">resilient mount</span></div>
-        </a>
-        <a class="card thrust-card" href="research.html#survivability">
-          <span class="thrust-num">03</span>
-          <h3>Naval survivability modeling and simulation</h3>
-          <p lang="ko">함정 생존성 M&amp;S</p>
-          <div class="tag-row"><span class="tag">RCS</span><span class="tag">hit-point tracker</span><span class="tag">V&amp;V</span><span class="tag">vulnerability</span></div>
+          <p lang="ko">수중 음향 및 함정 신호 제어</p>
+          <div class="tag-row"><span class="tag">target strength</span><span class="tag">URN</span><span class="tag">bubble layer</span><span class="tag">resilient mount</span></div>
         </a>
         <a class="card thrust-card" href="research.html#ai-twin">
-          <span class="thrust-num">04</span>
+          <span class="thrust-num">03</span>
           <h3>Physics-informed AI and digital twins</h3>
           <p lang="ko">물리정보 AI 및 디지털 트윈</p>
-          <div class="tag-row"><span class="tag">PINN</span><span class="tag">DNN</span><span class="tag">digital twin</span><span class="tag">Unity-ROS2</span></div>
+          <div class="tag-row"><span class="tag">PINN</span><span class="tag">DNN</span><span class="tag">digital twin</span><span class="tag">unmanned vessels</span></div>
         </a>
       </div>
     </div>
@@ -188,12 +185,12 @@
   <!-- Featured publications -->
   <section class="section">
     <div class="wrap">
-      <div class="section-head" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 1rem;">
+      <div class="section-head section-head--row">
         <div>
           <span class="section-label">Selected papers</span>
           <h2>Featured publications</h2>
         </div>
-        <a href="publications.html" class="btn btn-ghost" style="font-size: 0.875rem;">All publications &rarr;</a>
+        <a href="publications.html" class="btn btn-ghost btn-sm">All publications &rarr;</a>
       </div>
       <div class="grid-3" id="featured-pubs"></div>
     </div>
@@ -204,12 +201,12 @@
     <div class="wrap">
       <div class="grid-2" style="gap: 2rem; align-items: flex-start;">
         <div>
-      <div class="section-head" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 1rem;">
+      <div class="section-head section-head--row">
         <div>
           <span class="section-label">Updates</span>
           <h2>What&rsquo;s happening</h2>
         </div>
-        <a href="news.html" class="btn btn-ghost" style="font-size: 0.875rem;">All news &rarr;</a>
+        <a href="news.html" class="btn btn-ghost btn-sm">All news &rarr;</a>
       </div>
           <ul class="news-list" id="news-list" data-limit="5"></ul>
         </div>
@@ -226,7 +223,7 @@
             <span class="section-label">Work with us</span>
             <h3 style="margin: 0.25rem 0 0.75rem;">Join the lab</h3>
             <p style="color: var(--ink-soft); font-size: 0.9375rem; line-height: 1.65;">
-              M.S./Ph.D. positions and undergraduate research internships are open. Our students work on funded projects and have received <span data-count="student-awards"></span> national awards.
+              M.S./Ph.D. positions and undergraduate research internships are open. Our students work on funded projects and have received <span data-count="student-awards"></span> student awards.
             </p>
             <a href="contact.html" class="btn btn-teal" style="font-size: 0.875rem; padding: 0.45rem 0.9rem;">Opportunities &rarr;</a>
           </div>
@@ -240,11 +237,12 @@
     <div class="wrap">
       <div class="foot-inner">
         <div class="foot-brand">
-          <h3>Applied Cyber-Physical Systems Laboratory (ACPS Lab)</h3>
+          <p class="foot-title">Applied Cyber-Physical Systems Laboratory (ACPS Lab)</p>
           <p>Department of Artificial Intelligence &amp; Defense Engineering<br>Changwon National University, Changwon, Republic of Korea</p>
+          <p class="foot-contact"><a href="mailto:parksj0314@tu.ac.kr">parksj0314@tu.ac.kr</a> · <a href="contact.html">Contact &amp; location</a></p>
         </div>
         <div class="foot-links">
-          <h4>Navigation</h4>
+          <p class="foot-subtitle">Navigation</p>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="people.html">People</a></li>
@@ -262,9 +260,9 @@
     </div>
   </footer>
 
-  <script src="data/news.js?v=20261015a"></script>
-  <script src="data/publications.js?v=20261015a"></script>
-  <script src="data/projects.js?v=20261015a"></script>
-  <script src="js/main.js?v=20261015a"></script>
+  <script src="data/news.js?v=20261102a"></script>
+  <script src="data/publications.js?v=20261102a"></script>
+  <script src="data/projects.js?v=20261102a"></script>
+  <script src="js/main.js?v=20261102a"></script>
 </body>
 </html>

@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research — ACPS Lab | Changwon National University</title>
-  <meta name="description" content="Four research thrusts of the Applied Cyber-Physical Systems Laboratory: structural integrity, underwater acoustics and signature control, naval survivability M&amp;S, and physics-informed AI and digital twins.">
-  <link rel="stylesheet" href="css/style.css?v=20261015a">
+  <meta name="description" content="Three research thrusts of the Applied Cyber-Physical Systems Laboratory: structural integrity under extreme conditions, underwater acoustics and signature control, and physics-informed AI and digital twins.">
+  <link rel="stylesheet" href="css/style.css?v=20261102a">
   <!-- Link previews (KakaoTalk, Slack, social media) -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ACPS Lab">
   <meta property="og:title" content="Research — ACPS Lab | Changwon National University">
-  <meta property="og:description" content="Four research thrusts of the Applied Cyber-Physical Systems Laboratory: structural integrity, underwater acoustics and signature control, naval survivability M&amp;S, and physics-informed AI and digital twins.">
+  <meta property="og:description" content="Three research thrusts of the Applied Cyber-Physical Systems Laboratory: structural integrity under extreme conditions, underwater acoustics and signature control, and physics-informed AI and digital twins.">
   <meta property="og:url" content="https://acps-lab-cwnu.github.io/research.html">
+  <link rel="canonical" href="https://acps-lab-cwnu.github.io/research.html">
   <meta property="og:image" content="https://acps-lab-cwnu.github.io/images/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -29,17 +30,17 @@
     <div class="site-head-inner">
       <a class="brand" href="index.html">
         <picture><source srcset="images/logo-mark-dark.svg" media="(prefers-color-scheme: dark)"><img class="brand-logo" src="images/logo-mark.svg" alt="ACPS Lab" width="33" height="38"></picture>
-        <span class="brand-text">Applied Cyber-Physical Systems Lab</span>
+        <span class="brand-text">Applied Cyber-Physical Systems Lab</span><span class="brand-short">ACPS Lab</span>
       </a>
-      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
-      <nav class="site-nav" aria-label="Main Navigation">
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="people.html">People</a>
         <a href="research.html">Research</a>
         <a href="projects.html">Projects</a>
         <a href="publications.html">Publications</a>
         <a href="news.html">News</a>
-        <a href="contact.html">Join Us</a>
+        <a href="contact.html">Join Us &amp; Contact</a>
       </nav>
     </div>
   </header>
@@ -48,9 +49,9 @@
   <section style="background: var(--bg-soft); padding: 3rem 0; border-bottom: 1px solid var(--rule);">
     <div class="wrap">
       <span class="section-label">Research</span>
-      <h1>Four research thrusts</h1>
+      <h1>Three research thrusts</h1>
       <p style="color: var(--ink-soft); max-width: var(--measure); margin-bottom: 0;">
-        Structural integrity is the foundation; acoustics and survivability extend it to naval platforms; physics-informed AI and digital twins make it fast and live.
+        Structural integrity is the foundation; underwater acoustics and signature control extend it to naval stealth and survivability; physics-informed AI and digital twins make it fast and live.
         Each thrust lists its methods, figures, recent papers and projects. For how these grew over time, see the <a href="people.html#trajectory">Career Milestone Summary</a>.
       </p>
     </div>
@@ -65,132 +66,76 @@
           <h2 class="th-title">Structural integrity under extreme conditions</h2>
           <p class="ph-ko" lang="ko">극한 환경 구조 건전성 평가</p>
           <p class="th-lead">How marine steels and structures deform, fracture and fatigue under impact, cryogenic temperature and hydrogen, and how to carry that into full-scale design assessment.</p>
-          <ul class="th-focus"><li>Material database: quasi-static, high-strain-rate, cryogenic and hydrogen-charged tests of ship, pipeline and tank steels</li><li>Fracture and fatigue models (Hosford–Coulomb, HC-DSSE, damage evolution) implemented as FE user subroutines</li><li>Collision, grounding, punching and ultimate strength of ship and offshore structures</li><li>Subsea and offshore components: hydrogen pipelines, dynamic power cables, risers, moorings</li></ul>
-          <div class="tag-row"><span class="tag">Hosford–Coulomb</span><span class="tag">VUMAT</span><span class="tag">cryogenic</span><span class="tag">hydrogen embrittlement</span><span class="tag">low-cycle fatigue</span></div>
+          <ul class="th-focus"><li>Material database: quasi-static, high-strain-rate, cryogenic and hydrogen-charged tests of ship, pipeline and tank steels</li><li>Ductile fracture and fatigue constitutive models implemented in nonlinear finite element analysis</li><li>Collision, grounding, punching and ultimate strength of ship and offshore structures</li><li>Subsea and offshore components: hydrogen pipelines, pressure hulls, risers and moorings</li></ul>
+          <div class="tag-row"><span class="tag">ductile fracture</span><span class="tag">nonlinear FEA</span><span class="tag">cryogenic</span><span class="tag">hydrogen embrittlement</span><span class="tag">low-cycle fatigue</span></div>
         </div>
-        <div class="ph-media"><a class="ph-tile ph-photo ph-hero" href="images/trajectory/p1-camera.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p1-camera.jpg" alt="Temperature chamber and high-speed camera" loading="lazy"><span class="ph-cap">Temperature chamber and high-speed camera</span></a><a class="ph-tile ph-photo" href="images/trajectory/p1-grips.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p1-grips.jpg" alt="Tension test grips" loading="lazy"><span class="ph-cap">Tension test grips</span></a><a class="ph-tile ph-photo" href="images/trajectory/p1-specimen.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p1-specimen.jpg" alt="Fatigue life test" loading="lazy"><span class="ph-cap">Fatigue life test</span></a><a class="ph-tile ph-plot" href="images/trajectory/p1-rig.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p1-rig.jpg" alt="Test-rig design" loading="lazy"><span class="ph-cap">Test-rig design</span></a><a class="ph-tile ph-plot ph-wide" href="images/trajectory/p1-offshore-fe.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p1-offshore-fe.jpg" alt="Offshore wind substructure FE model" loading="lazy"><span class="ph-cap">Offshore wind substructure FE model</span></a></div>
+        <div class="ph-media rf">
+          <figure class="rf-hero"><a href="images/research/nb-kv1-03.jpg" target="_blank" rel="noopener"><img src="images/research/nb-kv1-03.jpg" alt="Punching test vs. damage simulation" loading="lazy"></a><figcaption><b>Punching test vs. damage simulation</b></figcaption></figure>
+          <div class="rf-row">
+            <figure class="rf-item"><a href="images/research/nb-kv1-04.jpg" target="_blank" rel="noopener"><img src="images/research/nb-kv1-04.jpg" alt="Stiffened cylinder: test and simulation" loading="lazy"></a><figcaption><b>Stiffened cylinder: test and simulation</b></figcaption></figure>
+            <figure class="rf-item"><a href="images/research/nb-kv1-02.jpg" target="_blank" rel="noopener"><img src="images/research/nb-kv1-02.jpg" alt="Fracture test specimens of marine steel" loading="lazy"></a><figcaption><b>Fracture test specimens of marine steel</b></figcaption></figure>
+            <figure class="rf-item"><a href="images/research/nb-kv1-01.jpg" target="_blank" rel="noopener"><img src="images/research/nb-kv1-01.jpg" alt="High-speed tensile testing machine" loading="lazy"></a><figcaption><b>High-speed tensile testing machine</b></figcaption></figure>
+          </div>
+        </div>
       </article>
       <div class="th-out ph-1">
-        <div><h3>Selected papers <span data-thrust-count="papers:structures"></span></h3><ol class="th-list" data-thrust-papers="structures" data-limit="4"></ol></div>
-        <div><h3>Projects <span data-thrust-count="projects:structures"></span></h3><ul class="th-list" data-thrust-projects="structures" data-limit="4"></ul></div>
+        <div><h3>Selected papers <span data-thrust-count="papers:structures"></span></h3><ol class="th-list" data-thrust-papers="structures" data-limit="4"></ol><a class="th-more" href="publications.html?thrust=structures">All papers in this thrust &rarr;</a></div>
+        <div><h3>Projects <span data-thrust-count="projects:structures"></span></h3><ul class="th-list" data-thrust-projects="structures" data-limit="4"></ul><a class="th-more" href="projects.html?thrust=structures">All projects in this thrust &rarr;</a></div>
       </div>
     </div>
   </section>
 
   <section class="section section-tint th" id="acoustics">
+    <span id="survivability" aria-hidden="true"></span>
     <div class="wrap">
       <article class="ph ph-2 ph-flip">
         <div class="ph-text">
           <div class="ph-head"><span class="ph-num">02</span><span class="ph-label">Thrust 2 · Phase 2 Expansion</span></div>
           <h2 class="th-title">Underwater acoustics and signature control</h2>
-          <p class="ph-ko" lang="ko">수중 음향 및 신호 제어</p>
-          <p class="th-lead">How hull structures radiate and scatter sound underwater, and how bubble layers, mounts and coatings make naval platforms quieter.</p>
-          <ul class="th-focus"><li>Underwater radiated noise: structure-borne transfer functions, propeller-induced vibration and noise</li><li>Noise reduction: air-bubble layers, resilient mounts and hyperelastic material models</li><li>Target strength: water-tank cumulative-energy measurement, bistatic analysis, OptiX ray tracing, absorbing materials</li></ul>
-          <div class="tag-row"><span class="tag">URN</span><span class="tag">target strength</span><span class="tag">bubble layer</span><span class="tag">resilient mount</span><span class="tag">water tank</span></div>
+          <p class="ph-ko" lang="ko">수중 음향 및 함정 신호 제어</p>
+          <p class="th-lead">How hull structures radiate and scatter sound underwater, and how bubble layers, resilient mounts and coatings make naval platforms quieter and harder to detect.</p>
+          <ul class="th-focus"><li>Target strength (TS): GPU-accelerated acoustic ray-shooting and scattering analysis for full-scale submarine hulls, validated by water-tank measurements and bistatic analysis</li><li>Underwater radiated noise (URN): structure-borne transfer functions, propeller-induced vibration and noise, and acoustic insertion loss from air-bubble cap layers</li><li>Vibration isolation and naval stealth M&amp;S: hyperelastic resilient mounts under preload, acoustic absorbing materials, and signature-based naval survivability assessment</li></ul>
+          <div class="tag-row"><span class="tag">target strength</span><span class="tag">URN</span><span class="tag">acoustic stealth</span><span class="tag">bubble layer</span><span class="tag">resilient mount</span></div>
         </div>
-        <div class="ph-media"><a class="ph-tile ph-plot ph-hero" href="images/trajectory/p2-polar.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p2-polar.jpg" alt="Acoustic scattering directivity" loading="lazy"><span class="ph-cap">Acoustic scattering directivity</span></a><a class="ph-tile ph-plot" href="images/trajectory/p2-radiation.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p2-radiation.jpg" alt="Radiation efficiency with bubble layers" loading="lazy"><span class="ph-cap">Radiation efficiency with bubble layers</span></a><a class="ph-tile ph-plot" href="images/trajectory/p2-tank.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p2-tank.jpg" alt="Water-tank acoustic measurement" loading="lazy"><span class="ph-cap">Water-tank acoustic measurement</span></a><a class="ph-tile ph-plot ph-full" href="images/trajectory/p2-transmissibility.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p2-transmissibility.jpg" alt="Resilient mount transmissibility" loading="lazy"><span class="ph-cap">Resilient mount transmissibility</span></a></div>
+        <div class="ph-media rf">
+          <figure class="rf-hero"><a href="images/research/nb-kv2-hero.jpg" target="_blank" rel="noopener"><img src="images/research/nb-kv2-hero.jpg" alt="Submarine target strength and underwater radiated noise" loading="lazy"></a><figcaption><b>Submarine target strength and underwater radiated noise</b></figcaption></figure>
+          <div class="rf-row">
+            <figure class="rf-item"><a href="images/research/t2-mount-fe.jpg" target="_blank" rel="noopener"><img src="images/research/t2-mount-fe.jpg" alt="Resilient mount FE model under preload" loading="lazy"></a><figcaption><b>Resilient mount FE model under preload</b></figcaption></figure>
+            <figure class="rf-item"><a href="images/research/t2-hero-bubble-cap-field.jpg" target="_blank" rel="noopener"><img src="images/research/t2-hero-bubble-cap-field.jpg" alt="Acoustic pressure around air bubble caps beneath a plate" loading="lazy"></a><figcaption><b>Acoustic pressure around air bubble caps beneath a plate</b></figcaption></figure>
+            <figure class="rf-item"><a href="images/research/nb-kv2-01.jpg" target="_blank" rel="noopener"><img src="images/research/nb-kv2-01.jpg" alt="Stiffened plate with bubble caps in the water tank" loading="lazy"></a><figcaption><b>Stiffened plate with bubble caps in the water tank</b></figcaption></figure>
+          </div>
+        </div>
       </article>
       <div class="th-out ph-2">
-        <div><h3>Selected papers <span data-thrust-count="papers:acoustics"></span></h3><ol class="th-list" data-thrust-papers="acoustics" data-limit="4"></ol></div>
-        <div><h3>Projects <span data-thrust-count="projects:acoustics"></span></h3><ul class="th-list" data-thrust-projects="acoustics" data-limit="4"></ul></div>
+        <div><h3>Selected papers <span data-thrust-count="papers:acoustics"></span></h3><ol class="th-list" data-thrust-papers="acoustics" data-limit="4"></ol><a class="th-more" href="publications.html?thrust=acoustics">All papers in this thrust &rarr;</a></div>
+        <div><h3>Projects <span data-thrust-count="projects:acoustics"></span></h3><ul class="th-list" data-thrust-projects="acoustics" data-limit="4"></ul><a class="th-more" href="projects.html?thrust=acoustics">All projects in this thrust &rarr;</a></div>
       </div>
     </div>
   </section>
 
-  <section class="section th" id="survivability">
+  <section class="section th" id="ai-twin">
     <div class="wrap">
-      <article class="ph ph-2">
+      <article class="ph ph-3">
         <div class="ph-text">
-          <div class="ph-head"><span class="ph-num">03</span><span class="ph-label">Thrust 3 · Phase 2 Expansion</span></div>
-          <h2 class="th-title">Naval survivability modeling and simulation</h2>
-          <p class="ph-ko" lang="ko">함정 생존성 M&S</p>
-          <p class="th-lead">How warships appear to radar, where a radar-homing missile is likely to hit, and whether design-stage simulations can be trusted.</p>
-          <ul class="th-focus"><li>Radar cross section estimation for concept design, and RCS reduction</li><li>Anti-ship missile hit-point estimation from scattering centers; vulnerability assessment</li><li>Verification and validation of M&amp;S for naval ship programs; radar reflectors for small craft</li></ul>
-          <div class="tag-row"><span class="tag">RCS</span><span class="tag">hit-point tracker</span><span class="tag">V&amp;V</span><span class="tag">vulnerability</span></div>
-        </div>
-        <div class="ph-media"><a class="ph-tile ph-plot ph-hero" href="images/trajectory/p2-hit-dist.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p2-hit-dist.jpg" alt="Missile hit-point distribution on a surface ship" loading="lazy"><span class="ph-cap">Missile hit-point distribution on a surface ship</span></a><a class="ph-tile ph-plot ph-tall" href="images/trajectory/p2-hpt.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p2-hpt.jpg" alt="Hit-point tracker architecture" loading="lazy"><span class="ph-cap">Hit-point tracker architecture</span></a></div>
-      </article>
-      <div class="th-out ph-2">
-        <div><h3>Selected papers <span data-thrust-count="papers:survivability"></span></h3><ol class="th-list" data-thrust-papers="survivability" data-limit="4"></ol></div>
-        <div><h3>Projects <span data-thrust-count="projects:survivability"></span></h3><ul class="th-list" data-thrust-projects="survivability" data-limit="4"></ul></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-tint th" id="ai-twin">
-    <div class="wrap">
-      <article class="ph ph-3 ph-flip">
-        <div class="ph-text">
-          <div class="ph-head"><span class="ph-num">04</span><span class="ph-label">Thrust 4 · Phase 3 Future Innovation</span></div>
+          <div class="ph-head"><span class="ph-num">03</span><span class="ph-label">Thrust 3 · Phase 3 Future Innovation</span></div>
           <h2 class="th-title">Physics-informed AI and digital twins</h2>
           <p class="ph-ko" lang="ko">물리정보 AI 및 디지털 트윈</p>
           <p class="th-lead">How to make physics models fast enough to design with and to run alongside a real system, and how to keep the virtual and the real in sync.</p>
-          <ul class="th-focus"><li>Physics-informed and data-integrated neural networks for collapse strength and optimal design of stiffened cylinders and domes</li><li>AI-based structural health monitoring and sensing (IoT, vision) for offshore plants and pipelines</li><li>Digital-twin simulators with Unity and MuJoCo-ROS2 for remote control and monitoring of unmanned vessels</li></ul>
-          <div class="tag-row"><span class="tag">PINN</span><span class="tag">DNN</span><span class="tag">digital twin</span><span class="tag">Unity-ROS2</span><span class="tag">SHM</span></div>
+          <ul class="th-focus"><li>Physics-informed and data-integrated neural networks for collapse strength and optimal design of stiffened cylinders and domes</li><li>AI-based structural health monitoring and sensing (IoT, vision) for offshore plants and pipelines</li><li>Real-time digital-twin simulators for remote control and monitoring of unmanned vessels</li></ul>
+          <div class="tag-row"><span class="tag">PINN</span><span class="tag">DNN</span><span class="tag">digital twin</span><span class="tag">unmanned vessels</span><span class="tag">SHM</span></div>
         </div>
-        <div class="ph-media"><a class="ph-tile ph-photo ph-hero" href="images/trajectory/p3-mujoco.webp" target="_blank" rel="noopener"><picture><source srcset="images/trajectory/p3-mujoco.jpg" media="(prefers-reduced-motion: reduce)"><img src="images/trajectory/p3-mujoco.webp" alt="MuJoCo-ROS2 simulation (animation)" loading="lazy"></picture><span class="ph-cap">MuJoCo-ROS2 simulation</span></a><a class="ph-tile ph-plot" href="images/trajectory/p3-pinn.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p3-pinn.jpg" alt="PINN with physics-based loss terms" loading="lazy"><span class="ph-cap">PINN with physics-based loss terms</span></a><a class="ph-tile ph-plot" href="images/trajectory/p3-cylinder.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p3-cylinder.jpg" alt="Stiffened cylinder stress field" loading="lazy"><span class="ph-cap">Stiffened cylinder stress field</span></a><a class="ph-tile ph-plot" href="images/trajectory/p3-dt-system.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p3-dt-system.jpg" alt="Unity-ROS digital twin framework" loading="lazy"><span class="ph-cap">Unity-ROS digital twin framework</span></a><a class="ph-tile ph-photo ph-wide" href="images/trajectory/p3-usv-field.jpg" target="_blank" rel="noopener"><img src="images/trajectory/p3-usv-field.jpg" alt="Unmanned boat field test" loading="lazy"><span class="ph-cap">Unmanned boat field test</span></a></div>
+        <div class="ph-media rf">
+          <figure class="rf-hero"><a href="images/research/nb-kv3-02.jpg" target="_blank" rel="noopener"><img src="images/research/nb-kv3-02.jpg" alt="Unmanned boat remote operation and Unity digital twin" loading="lazy"></a><figcaption><b>Unmanned boat remote operation and Unity digital twin</b></figcaption></figure>
+          <div class="rf-row">
+            <figure class="rf-item"><a href="images/research/nb-kv3-03.jpg" target="_blank" rel="noopener"><img src="images/research/nb-kv3-03.jpg" alt="Collapse mode of an optimized cylinder under hydrostatic pressure" loading="lazy"></a><figcaption><b>Collapse mode of an optimized cylinder under hydrostatic pressure</b></figcaption></figure>
+            <figure class="rf-item"><a href="images/research/t4-pinn-architecture.jpg" target="_blank" rel="noopener"><img src="images/research/t4-pinn-architecture.jpg" alt="PINN with physics-based loss terms" loading="lazy"></a><figcaption><b>PINN with physics-based loss terms</b></figcaption></figure>
+            <figure class="rf-item"><a href="images/trajectory/p3-mujoco.webp" target="_blank" rel="noopener"><picture><source srcset="images/trajectory/p3-mujoco.jpg" media="(prefers-reduced-motion: reduce)"><img src="images/trajectory/p3-mujoco.webp" alt="MuJoCo-ROS2 digital-twin simulation" loading="lazy"></picture></a><figcaption><b>MuJoCo-ROS2 digital-twin simulation</b></figcaption></figure>
+          </div>
+        </div>
       </article>
       <div class="th-out ph-3">
-        <div><h3>Selected papers <span data-thrust-count="papers:ai-twin"></span></h3><ol class="th-list" data-thrust-papers="ai-twin" data-limit="4"></ol></div>
-        <div><h3>Projects <span data-thrust-count="projects:ai-twin"></span></h3><ul class="th-list" data-thrust-projects="ai-twin" data-limit="4"></ul></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Facilities Section -->
-  <section class="section section-tint" id="facilities">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="section-label">Experimental Rigs</span>
-        <h2>Key Laboratory Testing Rigs & Facilities</h2>
-      </div>
-
-      <div class="grid-3">
-        <div class="card" style="padding: 1.5rem;">
-          <h3 style="color: var(--accent);">Universal Testing Machine (UTM)</h3>
-          <p style="font-size: 0.9375rem; color: var(--ink-soft);">
-            Capacity: &plusmn;50 ton, hydraulic servo with PC control.<br>
-            <strong>Temperature Chamber:</strong> &minus;197 &deg;C to +300 &deg;C for liquid nitrogen cryogenic testing.
-          </p>
-        </div>
-
-        <div class="card" style="padding: 1.5rem;">
-          <h3 style="color: var(--accent);">High-Speed Tensile Tester</h3>
-          <p style="font-size: 0.9375rem; color: var(--ink-soft);">
-            Max stroke speed: 15 m/s, max load: 5 ton.<br>
-            <strong>High-Speed Camera:</strong> 190 kHz sampling rate for dynamic strain DIC tracking.
-          </p>
-        </div>
-
-        <div class="card" style="padding: 1.5rem;">
-          <h3 style="color: var(--accent);">Pendulum Impact Tester</h3>
-          <p style="font-size: 0.9375rem; color: var(--ink-soft);">
-            High-speed compression loading.<br>
-            Max testing speed: 10 m/s, Max strain rate: 200 /s, Max load: 20 ton.
-          </p>
-        </div>
-
-        <div class="card" style="padding: 1.5rem;">
-          <h3 style="color: var(--accent);">Bending-Torsion Test Rig</h3>
-          <p style="font-size: 0.9375rem; color: var(--ink-soft);">
-            Longitudinal bending and torsional fatigue loading setup.<br>
-            Max testing load: 1 ton.
-          </p>
-        </div>
-
-        <div class="card" style="padding: 1.5rem;">
-          <h3 style="color: var(--accent);">Reverberant Water Tank Rigs</h3>
-          <p style="font-size: 0.9375rem; color: var(--ink-soft);">
-            Small-scale reverberant water tank for cumulative energy method acoustic TS and URN transfer function measurement.
-          </p>
-        </div>
-
-        <div class="card" style="padding: 1.5rem;">
-          <h3 style="color: var(--accent);">CAE & Digital Twin Workstations</h3>
-          <p style="font-size: 0.9375rem; color: var(--ink-soft);">
-            Abaqus VUMAT user subroutines, COMSOL Multiphysics, ANSYS, Unity-ROS2 simulation servers, Python PyTorch GPU workstations.
-          </p>
-        </div>
+        <div><h3>Selected papers <span data-thrust-count="papers:ai-twin"></span></h3><ol class="th-list" data-thrust-papers="ai-twin" data-limit="4"></ol><a class="th-more" href="publications.html?thrust=ai-twin">All papers in this thrust &rarr;</a></div>
+        <div><h3>Projects <span data-thrust-count="projects:ai-twin"></span></h3><ul class="th-list" data-thrust-projects="ai-twin" data-limit="4"></ul><a class="th-more" href="projects.html?thrust=ai-twin">All projects in this thrust &rarr;</a></div>
       </div>
     </div>
   </section>
@@ -200,11 +145,12 @@
     <div class="wrap">
       <div class="foot-inner">
         <div class="foot-brand">
-          <h3>Applied Cyber-Physical Systems Laboratory (ACPS Lab)</h3>
+          <p class="foot-title">Applied Cyber-Physical Systems Laboratory (ACPS Lab)</p>
           <p>Department of Artificial Intelligence &amp; Defense Engineering<br>Changwon National University, Changwon, Republic of Korea</p>
+          <p class="foot-contact"><a href="mailto:parksj0314@tu.ac.kr">parksj0314@tu.ac.kr</a> · <a href="contact.html">Contact &amp; location</a></p>
         </div>
         <div class="foot-links">
-          <h4>Navigation</h4>
+          <p class="foot-subtitle">Navigation</p>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="people.html">People</a></li>
@@ -222,8 +168,8 @@
     </div>
   </footer>
 
-  <script src="data/publications.js?v=20261015a"></script>
-  <script src="data/projects.js?v=20261015a"></script>
-  <script src="js/main.js?v=20261015a"></script>
+  <script src="data/publications.js?v=20261102a"></script>
+  <script src="data/projects.js?v=20261102a"></script>
+  <script src="js/main.js?v=20261102a"></script>
 </body>
 </html>

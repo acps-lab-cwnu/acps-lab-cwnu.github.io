@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Publications — ACPS Lab | Changwon National University</title>
   <meta name="description" content="Journal papers (SCIE, Scopus, KCI), conference papers, patents, technology transfers and books of Prof. Sung-Ju Park and the ACPS Lab.">
-  <link rel="stylesheet" href="css/style.css?v=20261015a">
+  <link rel="stylesheet" href="css/style.css?v=20261102a">
   <!-- Link previews (KakaoTalk, Slack, social media) -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ACPS Lab">
   <meta property="og:title" content="Publications — ACPS Lab | Changwon National University">
   <meta property="og:description" content="Journal papers (SCIE, Scopus, KCI), conference papers, patents, technology transfers and books of Prof. Sung-Ju Park and the ACPS Lab.">
   <meta property="og:url" content="https://acps-lab-cwnu.github.io/publications.html">
+  <link rel="canonical" href="https://acps-lab-cwnu.github.io/publications.html">
   <meta property="og:image" content="https://acps-lab-cwnu.github.io/images/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -29,17 +30,17 @@
     <div class="site-head-inner">
       <a class="brand" href="index.html">
         <picture><source srcset="images/logo-mark-dark.svg" media="(prefers-color-scheme: dark)"><img class="brand-logo" src="images/logo-mark.svg" alt="ACPS Lab" width="33" height="38"></picture>
-        <span class="brand-text">Applied Cyber-Physical Systems Lab</span>
+        <span class="brand-text">Applied Cyber-Physical Systems Lab</span><span class="brand-short">ACPS Lab</span>
       </a>
-      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
-      <nav class="site-nav" aria-label="Main Navigation">
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="people.html">People</a>
         <a href="research.html">Research</a>
         <a href="projects.html">Projects</a>
         <a href="publications.html">Publications</a>
         <a href="news.html">News</a>
-        <a href="contact.html">Join Us</a>
+        <a href="contact.html">Join Us &amp; Contact</a>
       </nav>
     </div>
   </header>
@@ -52,6 +53,7 @@
       <p style="color: var(--ink-soft); max-width: var(--measure); margin-bottom: 0.75rem;">
         Journal papers (SCIE, Scopus, KCI) by year, followed by conference papers, patents, technology transfers and books. Paper titles link to the publisher via DOI.
       </p>
+      <p class="pub-legend"><span data-count="scie"></span> SCIE &middot; <span data-count="scopus"></span> Scopus &middot; <span data-count="kci"></span> KCI &middot; <strong>Park SJ</strong> in bold, * corresponding author</p>
       <div class="scholar-links">
         <a href="https://scholar.google.com/citations?user=t3eiesQAAAAJ&hl=ko" target="_blank" rel="noopener" class="scholar-badge">🎓 Google Scholar Profile</a>
         <a href="https://orcid.org/0000-0002-7129-8567" target="_blank" rel="noopener" class="scholar-badge">🆔 ORCID Profile (0000-0002-7129-8567)</a>
@@ -66,11 +68,14 @@
       <!-- Live Search Box -->
       <div style="margin-bottom: 2rem; display: flex; justify-content: flex-end;">
         <div class="search-box" style="max-width: 360px; width: 100%;">
-          <input type="text" class="search-input" placeholder="Search title, author, journal, year...">
+          <label class="sr-only" for="pub-search">Search publications</label>
+          <input type="search" id="pub-search" class="search-input" placeholder="Search title, author, journal, year...">
         </div>
       </div>
 
+      <div class="thrust-note" id="thrust-note" hidden></div>
       <div class="pub-list" id="pub-list"></div>
+      <p class="no-results" hidden>No matching publications.</p>
     </div>
   </section>
 
@@ -79,11 +84,12 @@
     <div class="wrap">
       <div class="foot-inner">
         <div class="foot-brand">
-          <h3>Applied Cyber-Physical Systems Laboratory (ACPS Lab)</h3>
+          <p class="foot-title">Applied Cyber-Physical Systems Laboratory (ACPS Lab)</p>
           <p>Department of Artificial Intelligence &amp; Defense Engineering<br>Changwon National University, Changwon, Republic of Korea</p>
+          <p class="foot-contact"><a href="mailto:parksj0314@tu.ac.kr">parksj0314@tu.ac.kr</a> · <a href="contact.html">Contact &amp; location</a></p>
         </div>
         <div class="foot-links">
-          <h4>Navigation</h4>
+          <p class="foot-subtitle">Navigation</p>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="people.html">People</a></li>
@@ -101,7 +107,7 @@
     </div>
   </footer>
 
-  <script src="data/publications.js?v=20261015a"></script>
-  <script src="js/main.js?v=20261015a"></script>
+  <script src="data/publications.js?v=20261102a"></script>
+  <script src="js/main.js?v=20261102a"></script>
 </body>
 </html>

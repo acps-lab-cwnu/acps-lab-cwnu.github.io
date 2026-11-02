@@ -21,7 +21,7 @@ window.NEWS = [
   {"date": "2023", "type": "Student Award", "text": "자율운항보트 경진대회 장려상 · 대한전기학회"},
   {"date": "2023", "type": "Student Award", "text": "지역혁신형 창업 아이디어 페스티벌 은상 및 인기상 · 대한전기학회"},
   {"date": "2022", "type": "Student Award", "text": "자율운항보트 경진대회 설계·제작부문 입상 및 장려상 · 대한조선학회"},
-  {"date": "2022", "type": "Student Award", "text": "두잉 (Do-ing) 영상 공모전 장려상 · 동명대학교"},
+  {"date": "2022", "type": "Student Award", "text": "두잉(Do-ing) 영상 공모전 장려상 · 동명대학교"},
   {"date": "2022", "type": "Student Award", "text": "모형차 자율주행 경진대회 최우수상 · 한동대학교 SW중심대학"},
   {"date": "2021", "type": "Student Award", "text": "캡스톤디자인 경진대회 장려상 · 한국트라이볼로지학회"},
   {"date": "2021", "type": "Student Award", "text": "자율운항보트 경진대회 장려상 · 대한조선학회"},

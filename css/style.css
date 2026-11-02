@@ -1,7 +1,7 @@
 /* ==========================================================================
-   Prof. Sung-Ju Park — Academic Portfolio & Research Lab Website
-   Department of Electrical & Control Engineering / Naval Architecture & Ocean Engineering
-   Tongmyong University
+   Applied Cyber-Physical Systems Laboratory (ACPS Lab) — Prof. Sung-Ju Park
+   Department of Artificial Intelligence & Defense Engineering
+   Changwon National University
    ========================================================================== */
 
 :root {
@@ -22,7 +22,7 @@
   --accent-bg: #eff6ff;
 
   --teal: #0d9488;          /* Tech / Digital Twin Teal */
-  --teal-bg: #f0fdf4;
+  --teal-bg: #f0fdfa;
 
   --gold: #d97706;          /* Award Gold */
   --gold-bg: #fffbeb;
@@ -1089,3 +1089,112 @@ body { word-break: keep-all; overflow-wrap: break-word; }          /* Korean wra
 .site-nav a { white-space: nowrap; }
 @media (max-width: 1100px) { .brand-text { display: none; } }
 .news-list .news-date { min-width: 0; }
+
+/* Research figures (research.html): one lead figure + a row of supporting figures, captions below */
+.ph-media.rf { display: flex; flex-direction: column; gap: 1rem; }
+.rf figure { margin: 0; display: flex; flex-direction: column; gap: 0.45rem; min-width: 0; }
+.rf figure a { display: block; overflow: hidden; border-radius: 10px; border: 1px solid var(--rule); background: #ffffff; position: relative; }
+.rf figure a::before { content: ""; position: absolute; inset: 0 auto auto 0; width: 100%; height: 3px; background: var(--ph); z-index: 1; opacity: 0; transition: opacity 0.2s; }
+.rf figure a:hover::before, .rf figure a:focus-visible::before { opacity: 1; }
+.rf img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+.rf figure a:hover img { transform: scale(1.03); }
+.rf-hero a { aspect-ratio: 3 / 2; }
+.rf-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.9rem 0.75rem; }
+.rf-item a { aspect-ratio: 4 / 3; }
+.rf figcaption { font-size: 0.8125rem; line-height: 1.4; color: var(--ink-soft); }
+.rf figcaption b { display: block; font-weight: 600; color: var(--ink); }
+.rf-hero figcaption b { font-size: 0.875rem; }
+.rf-src { display: block; margin-top: 0.1rem; font-size: 0.75rem; font-style: italic; color: var(--ink-faint); }
+@media (prefers-color-scheme: dark) { .rf figure a { border-color: #475569; } .rf img { filter: brightness(0.94); } }
+@media (prefers-reduced-motion: reduce) { .rf img { transition: none; } .rf figure a:hover img { transform: none; } }
+@media (max-width: 640px) { .rf-row { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* Facility cards with a photo */
+.fac-photo { margin: -1.5rem -1.5rem 1rem; aspect-ratio: 16 / 9; overflow: hidden; border-radius: var(--radius) var(--radius) 0 0; background: #0b1220; }
+.fac-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* Review fixes (2026-10-27): contrast, mobile hero, header, accessibility helpers */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.btn-teal { background-color: #0f766e; }               /* white text 5.5:1 in light and dark */
+.btn-teal:hover { background-color: #115e59; }
+.btn-sm { font-size: 0.875rem; white-space: nowrap; }
+.section-head--row { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.section-head--row h2 { margin-bottom: 0; }
+.hero-from { white-space: nowrap; opacity: 0.85; font-weight: 600; }
+@media (max-width: 900px) { .hero-actions { justify-content: flex-start; } }
+@media (max-width: 640px) { .hero-logo { display: none; } }
+.brand-short { display: none; font-weight: 700; color: var(--ink); }
+@media (max-width: 1100px) { .brand-short { display: inline; } }
+.search-input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.foot-title { font-size: 1.125rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--ink); }
+.foot-subtitle { font-size: 0.9375rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--ink); }
+.foot-contact { margin-top: 0.5rem; font-size: 0.9rem; }
+.featured-title { margin-bottom: 0.5rem; line-height: 1.4; font-size: 1.05rem; }
+.count-line { color: var(--ink-soft); margin: -0.25rem 0 0.75rem; }
+.pub-legend { color: var(--ink-faint); font-size: 0.875rem; margin: 0 0 0.25rem; }
+#pub-list > h2 + .year-block .year-heading, #pub-list > .year-block:first-child .year-heading { margin-top: 1rem; }
+.no-results { color: var(--ink-faint); padding: 1rem 0; }
+.thrust-note { margin-bottom: 1.25rem; padding: 0.75rem 1rem; border-left: 3px solid var(--accent); background: var(--bg-soft); border-radius: 0 var(--radius) var(--radius) 0; color: var(--ink-soft); font-size: 0.9375rem; }
+.th-more { display: inline-block; margin-top: 0.75rem; font-size: 0.875rem; font-weight: 600; }
+.map-links { margin-top: 0.6rem; font-size: 0.9rem; }
+.tr-pin.tr-next strong, .tr-pin.tr-next .tr-year { color: var(--teal); }
+@media (prefers-color-scheme: dark) {
+  .filter-btn:hover, .filter-btn.active { color: #0f172a; }
+  .tr-band.tr-p2, .tr-band.tr-p3, .tr-band.tr-p2:hover, .tr-band.tr-p3:hover { color: #0f172a; }
+}
+.tr-pin.tr-next::after { background: var(--bg); border: 3px solid var(--teal); box-sizing: border-box; }
+.brand-text { white-space: nowrap; }
+@media (max-width: 1240px) { .brand-text { display: none; } .brand-short { display: inline; } }
+.brand { margin-right: 1.25rem; }
+
+/* Lightbox modal for research & trajectory figures + dark-mode plot comfort */
+@media (prefers-color-scheme: dark) {
+  .rf figure a, .ph-plot { background: #e2e8f0; border-color: #475569; }
+  .rf img { filter: brightness(0.93); }
+}
+.rf figure a, .pc-fig a { cursor: zoom-in; }
+.lightbox-backdrop {
+  position: fixed; inset: 0; z-index: 2000;
+  background: rgba(9, 15, 29, 0.88);
+  backdrop-filter: blur(6px);
+  display: flex; align-items: center; justify-content: center;
+  padding: 1.5rem; opacity: 0; pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+.lightbox-backdrop.open { opacity: 1; pointer-events: auto; }
+.lightbox-dialog {
+  position: relative; max-width: min(1080px, 94vw); max-height: 90vh;
+  display: flex; flex-direction: column; align-items: center;
+  background: #0f172a; border: 1px solid #334155; border-radius: 12px;
+  padding: 1rem 1rem 0.85rem; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.65);
+}
+.lightbox-img {
+  max-width: 100%; max-height: calc(90vh - 5.5rem);
+  width: auto; height: auto; object-fit: contain;
+  border-radius: 6px; background: #ffffff;
+}
+.lightbox-caption {
+  margin-top: 0.7rem; color: #e2e8f0; font-size: 0.9rem;
+  line-height: 1.45; text-align: center; max-width: 75ch;
+}
+.lightbox-close {
+  position: absolute; top: -0.75rem; right: -0.75rem;
+  width: 2.25rem; height: 2.25rem; border-radius: 999px;
+  border: 1px solid #475569; background: #1e293b; color: #f8fafc;
+  font-size: 1.25rem; line-height: 1; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+.lightbox-close:hover { background: var(--teal); border-color: var(--teal); color: #0f172a; }
+@media (max-width: 900px) {
+  .tr-axis-wrap {
+    background:
+      linear-gradient(to right, var(--bg-soft) 20%, rgba(0,0,0,0)),
+      linear-gradient(to left, var(--bg-soft) 20%, rgba(0,0,0,0)) 100% 0,
+      radial-gradient(farthest-side at 0 50%, rgba(15, 76, 129, 0.18), rgba(0,0,0,0)),
+      radial-gradient(farthest-side at 100% 50%, rgba(15, 76, 129, 0.18), rgba(0,0,0,0)) 100% 0;
+    background-repeat: no-repeat;
+    background-size: 28px 100%, 28px 100%, 12px 100%, 12px 100%;
+    background-attachment: local, local, scroll, scroll;
+  }
+}

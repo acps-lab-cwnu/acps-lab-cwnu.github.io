@@ -1,4 +1,4 @@
-// thrust: structures | acoustics | survivability | ai-twin ("" = none). 논문·학회·특허 목록. 새 항목은 해당 배열 맨 위에 추가. featured: true 인 논문은 첫 페이지에 표시됩니다.
+// thrust: structures | acoustics | ai-twin ("" = none). 논문·학회·특허 목록. 새 항목은 해당 배열 맨 위에 추가. featured: true 인 논문은 첫 페이지에 표시됩니다.
 window.PUBLICATIONS = {
   "journal": [
     {
@@ -64,7 +64,6 @@ window.PUBLICATIONS = {
       "venue": "Engineering Structures",
       "index": "SCIE",
       "doi": "10.1016/j.engstruct.2025.121397",
-      "featured": true,
       "thrust": "ai-twin"
     },
     {
@@ -74,6 +73,7 @@ window.PUBLICATIONS = {
       "venue": "Journal of Marine Science and Engineering",
       "index": "SCIE",
       "doi": "10.3390/jmse13071381",
+      "featured": true,
       "thrust": "structures"
     },
     {
@@ -151,7 +151,7 @@ window.PUBLICATIONS = {
     {
       "year": 2024,
       "authors": "Park SJ, Park B, Kim K*",
-      "title": "Study on Ductile Fracture behavior of Hydrogen-Charged API Pipeline Steel",
+      "title": "Study on ductile fracture behavior of hydrogen-charged API pipeline steel",
       "venue": "Mechanics Based Design of Structures and Machines",
       "index": "SCIE",
       "doi": "10.1080/15397734.2024.2310659",
@@ -191,7 +191,7 @@ window.PUBLICATIONS = {
       "venue": "Journal of the Society of Naval Architects of Korea",
       "index": "KCI",
       "doi": "10.3744/SNAK.2024.61.5.352",
-      "thrust": "survivability"
+      "thrust": "acoustics"
     },
     {
       "year": 2024,
@@ -295,7 +295,7 @@ window.PUBLICATIONS = {
     {
       "year": 2019,
       "authors": "Park SJ, Lee K, Cerik BC, Choung J*",
-      "title": "Ductile fracture prediction of EH36 grade steel based on Hosford-Coulomb model",
+      "title": "Ductile fracture prediction of EH36 grade steel based on Hosford–Coulomb model",
       "venue": "Ships and Offshore Structures",
       "index": "SCIE",
       "doi": "10.1080/17445302.2019.1565300",
@@ -313,7 +313,7 @@ window.PUBLICATIONS = {
     {
       "year": 2019,
       "authors": "Cerik BC, Lee K, Park SJ, Choung J*",
-      "title": "Simulation of ship collision and grounding damage using Hosford-Coulomb fracture model for shell elements",
+      "title": "Simulation of ship collision and grounding damage using Hosford–Coulomb fracture model for shell elements",
       "venue": "Ocean Engineering",
       "index": "SCIE",
       "doi": "10.1016/j.oceaneng.2019.01.004",
@@ -385,7 +385,7 @@ window.PUBLICATIONS = {
     {
       "year": 2015,
       "authors": "Kim Y, Park SJ, Yoon SW, Choung J*",
-      "title": "Flow stress properties of elastic resistance welded small-sized subsea pipeline subjected to temperature and strain rate variations",
+      "title": "Flow stress properties of electric resistance welded small-sized subsea pipeline subjected to temperature and strain rate variations",
       "venue": "Journal of Ocean Engineering and Technology",
       "index": "KCI",
       "doi": "10.5574/KSOE.2015.29.3.241",
@@ -422,69 +422,69 @@ window.PUBLICATIONS = {
   "conference_international": [
     {
       "year": 2025,
-      "text": "Kim SJ, Jeong SJ, Park SJ. Hydrodynamic Performance Assessment Of Long-Line Oyster Farming Systems. 44th International Conference on Ocean, Offshore and Arctic Engineering (OMAE 2025), Vancouver, Canada, June 22-27, 2025."
+      "text": "Kim SJ, Jeong SJ, Park SJ. Hydrodynamic Performance Assessment of Long-Line Oyster Farming Systems. 44th International Conference on Ocean, Offshore and Arctic Engineering (OMAE 2025), Vancouver, Canada, June 22–27, 2025."
     },
     {
       "year": 2022,
-      "text": "Park SJ, Park CS, Kim K, Lee JH, Lee KH, Numerical investigation of acoustic radiation efficiency of a wedge-shaped structure surrounded by air bubble layers, 24th International Congress on Acoustics (ICA 2022), Gyeongju, Korea, October 24-28, 2022."
+      "text": "Park SJ, Park CS, Kim K, Lee JH, Lee KH. Numerical investigation of acoustic radiation efficiency of a wedge-shaped structure surrounded by air bubble layers, 24th International Congress on Acoustics (ICA 2022), Gyeongju, Korea, October 24–28, 2022."
     },
     {
       "year": 2019,
-      "text": "Park SJ, Lee K, Cerik BC, Choung J, Comparative study on the ductile fracture behavior of various high-tensile strength marine structural steels, International Conference on Ships and Offshore Structures (ICSOS 2019), Florida, USA, November 4-7, 2019."
+      "text": "Park SJ, Lee K, Cerik BC, Choung J. Comparative study on the ductile fracture behavior of various high-tensile strength marine structural steels, International Conference on Ships and Offshore Structures (ICSOS 2019), Florida, USA, November 4–7, 2019."
     },
     {
       "year": 2019,
-      "text": "Cerik BC, Park SJ, Choung J, Predicting Ductile Fracture in Maritime Crash with a Modified Implementation of BWH Criterion, 14th International Symposium on Practical Design of Ships and Other Floating Structures (PRADS 2019), Yokohama, Japan, September 22-26, 2019."
+      "text": "Cerik BC, Park SJ, Choung J. Predicting Ductile Fracture in Maritime Crash with a Modified Implementation of BWH Criterion, 14th International Symposium on Practical Design of Ships and Other Floating Structures (PRADS 2019), Yokohama, Japan, September 22–26, 2019."
     },
     {
       "year": 2019,
-      "text": "Cerik BC, Park SJ, Choung J, On the modeling of ductile fracture in ship structures with shell elements at sub-zero temperatures, 12th International Symposium on Plasticity and Impact Mechanics (IMPLAST 2019), Busan, Korea, September 29-October 3, 2019."
+      "text": "Cerik BC, Park SJ, Choung J. On the modeling of ductile fracture in ship structures with shell elements at sub-zero temperatures, 12th International Symposium on Plasticity and Impact Mechanics (IMPLAST 2019), Busan, Korea, September 29-October 3, 2019."
     },
     {
       "year": 2018,
-      "text": "Park SJ, Lee K, Cerik BC, Choung J. Ductile fracture prediction of EH36 grade steel based on Hosford-Coulomb model. International Conference on Ships and Offshore Structures (ICSOS 2018), Gothenburg, Sweden, September 17-19, 2018."
+      "text": "Park SJ, Lee K, Cerik BC, Choung J. Ductile fracture prediction of EH36 grade steel based on Hosford–Coulomb model. International Conference on Ships and Offshore Structures (ICSOS 2018), Gothenburg, Sweden, September 17–19, 2018."
     },
     {
       "year": 2018,
-      "text": "Cerik BC, Park SJ, Choung J. Ductile fracture modelling of DH36 grade steels. 37th International Conference on Ocean, Offshore and Arctic Engineering (OMAE 2018), Madrid, Spain, June 17-22, 2018."
+      "text": "Cerik BC, Park SJ, Choung J. Ductile fracture modelling of DH36 grade steels. 37th International Conference on Ocean, Offshore and Arctic Engineering (OMAE 2018), Madrid, Spain, June 17–22, 2018."
     },
     {
       "year": 2017,
-      "text": "Park SJ, Lee K, Choung J, Walters CL, Ductile fracture prediction of arctic high tensile steel (EH36) using various damage evolution functions, International Conference on Ships and Offshore Structures (ICSOS 2017), Shenzhen, China, September 12-14, 2017."
+      "text": "Park SJ, Lee K, Choung J, Walters CL. Ductile fracture prediction of arctic high tensile steel (EH36) using various damage evolution functions, International Conference on Ships and Offshore Structures (ICSOS 2017), Shenzhen, China, September 12–14, 2017."
     },
     {
       "year": 2016,
-      "text": "Park SJ, Choung J, Kim Y, High strain flow stress characteristics of marine structural steel beyond onset of necking, The 26th International Ocean and Polar Engineering Conference (ISOPE 2016), Rhodes, Greece, June 26 - July 1, 2016."
+      "text": "Park SJ, Choung J, Kim Y. High strain flow stress characteristics of marine structural steel beyond onset of necking, The 26th International Ocean and Polar Engineering Conference (ISOPE 2016), Rhodes, Greece, June 26–July 1, 2016."
     },
     {
       "year": 2016,
-      "text": "Choung J, Park SJ, Development of three dimensional fracture strain surface in average stress triaxiality and average normalized Lode parameter domains for marine structure steels, International Conference of Collision and Groundings of Ships (ICCGS 2016), Ulsan, Korea, June 15-18, 2016."
+      "text": "Choung J, Park SJ. Development of three dimensional fracture strain surface in average stress triaxiality and average normalized Lode parameter domains for marine structure steels, International Conference on Collision and Grounding of Ships (ICCGS 2016), Ulsan, Korea, June 15–18, 2016."
     },
     {
       "year": 2016,
-      "text": "Park SJ, Choung J, Woo SH, On flow stress characteristics of marine structure steels beyond onset of necking, International Conference of Collision and Groundings of Ships (ICCGS 2016), Ulsan, Korea, June 15-18, 2016."
+      "text": "Park SJ, Choung J, Woo SH. On flow stress characteristics of marine structure steels beyond onset of necking, International Conference on Collision and Grounding of Ships (ICCGS 2016), Ulsan, Korea, June 15–18, 2016."
     },
     {
       "year": 2014,
-      "text": "Park SJ, Yoon SW, Choung J, Failure prediction of low-temperature high-strength steel according to stress triaxiality, 28th Asian-Pacific Technical Exchange and Advisory Meeting on Marine Structures (TEAM 2014), Istanbul, Turkey, October 13-16, 2014."
+      "text": "Park SJ, Yoon SW, Choung J. Failure prediction of low-temperature high-strength steel according to stress triaxiality, 28th Asian-Pacific Technical Exchange and Advisory Meeting on Marine Structures (TEAM 2014), Istanbul, Turkey, October 13–16, 2014."
     },
     {
       "year": 2014,
-      "text": "Choung J, Yoon SW, Park SJ, Nam W, Failure prediction of low-temperature high-strength steel on average stress triaxiality using Abaqus user-subroutine, 33rd International Conference on Ocean, Offshore and Arctic Engineering (OMAE 2014), San Francisco, USA, Jun 8-13, 2014."
+      "text": "Choung J, Yoon SW, Park SJ, Nam W. Failure prediction of low-temperature high-strength steel on average stress triaxiality using Abaqus user-subroutine, 33rd International Conference on Ocean, Offshore and Arctic Engineering (OMAE 2014), San Francisco, USA, June 8–13, 2014."
     }
   ],
   "conference_domestic": [
     {
       "year": 2026,
-      "text": "Kwon DH, Park JH, Cho DS, Kim K, Park SJ, Shin YH. Near-field Target Strength Measurement of a Plate Structure Using Cumulative Energy Method in Reverberant Water Tank. Proceedings of the 2025 Spring Conference of the Korean Society of Ocean Engineers, Jeju, Korea, May 27-29, 2026."
+      "text": "Kwon DH, Park JH, Cho DS, Kim K, Park SJ, Shin YH. Near-field Target Strength Measurement of a Plate Structure Using Cumulative Energy Method in Reverberant Water Tank. Proceedings of the 2026 Spring Conference of the Korean Society of Ocean Engineers, Jeju, Korea, May 27–29, 2026."
     },
     {
       "year": 2025,
-      "text": "Lee H, Kim K, Jeong CL, Park SJ, Im SH. RCS Measurement Results of Panel-Type Radar Reflector. Proceedings of the 2025 Spring Conference of the Korean Society of Ocean Engineers, Busan, Korea, May 8–10, 2025."
+      "text": "Lee H, Kim K, Jeong CL, Park SJ, Im SH. RCS Measurement Results of Panel-Type Radar Reflector. Proceedings of the 2025 Joint Conference of the Korean Association of Ocean Science and Technology Societies, Busan, Korea, May 8–10, 2025."
     },
     {
       "year": 2025,
-      "text": "Yu JH, Kim JH, Kim K, Park SJ, Jeong CL, Im SH. A Simplified Evaluation Method for the RCS Performance of Radar Reflectors for Small Leisure Vessels. Proceedings of the 2025 Spring Conference of the Korean Society of Ocean Engineers, Jeju, Korea, October 29–31, 2025."
+      "text": "Yu JH, Kim JH, Kim K, Park SJ, Jeong CL, Im SH. A Simplified Evaluation Method for the RCS Performance of Radar Reflectors for Small Leisure Vessels. Proceedings of the 2025 Joint Conference of the Korean Association of Ocean Science and Technology Societies, Jeju, Korea, October 29–31, 2025."
     },
     {
       "year": 2025,
@@ -500,19 +500,19 @@ window.PUBLICATIONS = {
     },
     {
       "year": 2025,
-      "text": "Jeong CL, Kim K, Park SJ, Kim EY, Park B. Study on Estimation of Radar-Homing Anti-Ship Missile Flight Paths Based on Equivalent Scattering Center of Naval Ship. Winter Conference of Society for Computational Design and Engineering (CDE), Gangwon, Korea, February 19-22, 2025."
+      "text": "Jeong CL, Kim K, Park SJ, Kim EY, Park B. Study on Estimation of Radar-Homing Anti-Ship Missile Flight Paths Based on Equivalent Scattering Center of Naval Ship. Winter Conference of Society for Computational Design and Engineering (CDE), Gangwon, Korea, February 19–22, 2025."
     },
     {
       "year": 2024,
-      "text": "Cho DS, Kim KH, Song KJ, Shin YH, Park SJ. Research on Target Strength Reduction Technologies for Advanced Stealth Submarines. Proceedings of the Annual Autumn Conference (SNAK), Changwon, Korea, November 14–15, 2024."
+      "text": "Cho DS, Kim KH, Song KJ, Shin YH, Park SJ. Research on Target Strength Reduction Technologies for Advanced Stealth Submarines. Proceedings of the Annual Autumn Conference of the Society of Naval Architects of Korea, Changwon, Korea, November 14–15, 2024."
     },
     {
       "year": 2024,
-      "text": "Jeong CL, Park SJ, Kim K. A Study on Reliability Improvement of Electric Motors for E-mobility. Proceedings of the Annual Autumn Conference (SNAK), Changwon, Korea, November 14–15, 2024."
+      "text": "Jeong CL, Park SJ, Kim K. A Study on Reliability Improvement of Electric Motors for E-mobility. Proceedings of the Annual Autumn Conference of the Society of Naval Architects of Korea, Changwon, Korea, November 14–15, 2024."
     },
     {
       "year": 2024,
-      "text": "Lee JY, Kim K, Park SJ, Cho DS. Numerical analysis on insertion loss tendency of air bubble layer beneath wetted surface of stiffened plate. Proceedings of the Annual Autumn Conference (SNAK), Changwon, Korea, November 14–15, 2024."
+      "text": "Lee JY, Kim K, Park SJ, Cho DS. Numerical analysis on insertion loss tendency of air bubble layer beneath wetted surface of stiffened plate. Proceedings of the Annual Autumn Conference of the Society of Naval Architects of Korea, Changwon, Korea, November 14–15, 2024."
     },
     {
       "year": 2024,
@@ -524,7 +524,7 @@ window.PUBLICATIONS = {
     },
     {
       "year": 2024,
-      "text": "Hong SC, Jeong CL, Park SJ, Kim K. Comparison of the output characteristics of six-phase synchronous reluctance motor according to the variation of winding configuration and rotor shape parameter. Proceedings of The Korean Institute of Electrical Engineers, Korea, July 10–13, 2024."
+      "text": "Hong SC, Jeong CL, Park SJ, Kim K. Comparison of the output characteristics of six-phase synchronous reluctance motor according to the variation of winding configuration and rotor shape parameter. Proceedings of the Korean Institute of Electrical Engineers, Korea, July 10–13, 2024."
     },
     {
       "year": 2024,
@@ -548,11 +548,11 @@ window.PUBLICATIONS = {
     },
     {
       "year": 2023,
-      "text": "Lee J, Hwang WS, Park SJ. A study on environmental corrosion monitoring method of buried structures. Proceedings of the Annual Autumn Conference, Ulsan, Korea, November 2–3, 2023."
+      "text": "Lee J, Hwang WS, Park SJ. A study on environmental corrosion monitoring method of buried structures. Proceedings of the Annual Autumn Conference of the Society of Naval Architects of Korea, Ulsan, Korea, November 2–3, 2023."
     },
     {
       "year": 2023,
-      "text": "Lee JY, Cho DS, Kim K, Park SJ. Measurement and numerical analysis of underwater acoustic radiation efficiencies for floating box-type plate structures in reverberant water tank. Proceedings of the Annual Autumn Conference, Ulsan, Korea, November 2–3, 2023."
+      "text": "Lee JY, Cho DS, Kim K, Park SJ. Measurement and numerical analysis of underwater acoustic radiation efficiencies for floating box-type plate structures in reverberant water tank. Proceedings of the Annual Autumn Conference of the Society of Naval Architects of Korea, Ulsan, Korea, November 2–3, 2023."
     },
     {
       "year": 2023,
@@ -659,8 +659,8 @@ window.PUBLICATIONS = {
   "transfers": [
     "IoT 센서 데이터 기반 토양 함수율 추정 시스템 및 방법 (10-2023-0149120호), 계약일: 2023.11.30., 기술도입자: (주)에스티에스엔지니어링",
     "배관 보호 커버 (10-2022-0036513호), 계약일: 2022.11.28., 기술도입자: (주)에스티에스엔지니어링",
-    "접이식 배 (10-2024-0079490), 계약일: 2024.9.23., 기술도입자: (주)에스티에스엔지니어링",
-    "수중 환경 측정 위치 정확도 제고를 위한 시스템(10-2024-0143689), 계약일: 2024.10.21., 기술도입자: (주)씨네이브",
-    "디지털 트윈 기반의 자율운항보트의 실시간 모니터링 시스템(10-2025-2025-0207743), 계약일: 2025.12.24., 기술도입자: (주)나루"
+    "접이식 배 (10-2024-0079490호), 계약일: 2024.09.23., 기술도입자: (주)에스티에스엔지니어링",
+    "수중 환경 측정 위치 정확도 제고를 위한 시스템 (10-2024-0143689호), 계약일: 2024.10.21., 기술도입자: (주)씨네이브",
+    "디지털 트윈 기반의 자율운항보트의 실시간 모니터링 시스템 (10-2025-0207743호), 계약일: 2025.12.24., 기술도입자: (주)나루"
   ]
 };
